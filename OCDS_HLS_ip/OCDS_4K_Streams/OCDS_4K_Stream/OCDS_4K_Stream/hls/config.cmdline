@@ -1,0 +1,3 @@
+relativeroot=C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream
+original_argv=-c --mode hls --config C:\OCDS\OCDS_4K_Streams\OCDS_4K_Stream\hls_config.cfg --work_dir OCDS_4K_Stream 
+

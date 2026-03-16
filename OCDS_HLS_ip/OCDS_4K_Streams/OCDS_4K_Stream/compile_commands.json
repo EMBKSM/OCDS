@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\OCDS\\cloude-detection-accelerator\\OCDS_HLS_ip\\OCDS_4K_Streams\\OCDS_4K_Stream",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=cloud_mlp_top",
+      "-c",
+      "cloud_mlp.cpp"
+    ],
+    "file": "cloud_mlp.cpp"
+  },
+  {
+    "directory": "C:\\OCDS\\cloude-detection-accelerator\\OCDS_HLS_ip\\OCDS_4K_Streams\\OCDS_4K_Stream",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "tb_cloud_mlp.cpp"
+    ],
+    "file": "tb_cloud_mlp.cpp"
+  }
+]

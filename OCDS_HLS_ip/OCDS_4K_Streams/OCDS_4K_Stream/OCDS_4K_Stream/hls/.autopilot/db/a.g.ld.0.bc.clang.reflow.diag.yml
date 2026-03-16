@@ -1,0 +1,668 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EE4readEv
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>::read()'
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 34, Column: 31 }
+Function:        _Z10read_inputRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEEP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERNS0_I10PacketMetaLi0EEE
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 30, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 86, Column: 25 }
+Function:        _Z10compute_l1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 17, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_l1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 136, Column: 25 }
+Function:        _Z10compute_l2P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 17, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_l2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 93, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 174, Column: 25 }
+Function:        _Z10compute_l3P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 17, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_l3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 143, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 202, Column: 12 }
+Function:        _Z12write_outputP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERN3hls6streamI10PacketMetaLi0EEERNS5_INS4_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 199, Column: 29 }
+Function:        _Z12write_outputP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERN3hls6streamI10PacketMetaLi0EEERNS5_INS4_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hard_sigmoid(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 22, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 233, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 234, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 235, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 93, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 236, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 237, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cloud_mlp.cpp, Line: 160, Column: 26 }
+Function:        _Z10compute_l3P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        L3_Inner_Unroll
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cloud_mlp.cpp, Line: 113, Column: 26 }
+Function:        _Z10compute_l2P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        L2_Inner_Unroll
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cloud_mlp.cpp, Line: 72, Column: 19 }
+Function:        _Z10compute_l1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        L1_Inner
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+Function:        _Z12write_outputP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERN3hls6streamI10PacketMetaLi0EEERNS5_INS4_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Loop_Out
+  - String:          ''' ('
+  - LoopLoc:         'cloud_mlp.cpp:190:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_output
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cloud_mlp.cpp, Line: 143, Column: 0 }
+Function:        _Z10compute_l3P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        L3_Inner_Unroll
+  - String:          ''' ('
+  - LoopLoc:         'cloud_mlp.cpp:160:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_l3
+  - String:          ''' completely with a factor of '
+  - Factor:          '128'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cloud_mlp.cpp, Line: 93, Column: 0 }
+Function:        _Z10compute_l2P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        L2_Inner_Unroll
+  - String:          ''' ('
+  - LoopLoc:         'cloud_mlp.cpp:113:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_l2
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cloud_mlp.cpp, Line: 54, Column: 0 }
+Function:        _Z10compute_l1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        L1_Inner
+  - String:          ''' ('
+  - LoopLoc:         'cloud_mlp.cpp:72:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_l1
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 34, Column: 31 }
+Function:        _Z10read_inputRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEEP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERNS0_I10PacketMetaLi0EEE
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 30, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 202, Column: 12 }
+Function:        _Z12write_outputP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERN3hls6streamI10PacketMetaLi0EEERNS5_INS4_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 233, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 234, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 235, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 93, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 236, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 237, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_cloud_mlp_top_ir
+Args:            
+  - Callee:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_cloud_mlp_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 30, Column: 0 }
+Function:        _Z10read_inputRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEEP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERNS0_I10PacketMetaLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 30, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+Function:        _Z12write_outputP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERN3hls6streamI10PacketMetaLi0EEERNS5_INS4_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 178, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./weights.h, Line: 205, Column: 0 }
+Function:        _Z10compute_l3P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./weights.h, Line: 73, Column: 0 }
+Function:        _Z10compute_l2P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./weights.h, Line: 5, Column: 0 }
+Function:        _Z10compute_l1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cloud_mlp.cpp, Line: 220, Column: 12 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input_arr
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cloud_mlp.cpp, Line: 224, Column: 12 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          l1_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cloud_mlp.cpp, Line: 227, Column: 12 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          l2_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cloud_mlp.cpp, Line: 230, Column: 12 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          l3_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ./weights.h, Line: 203, Column: 0 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=B2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cloud_mlp_top
+  - String:          ' '
+  - VarLoc:          './weights.h:203:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'cloud_mlp.cpp:105:1'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 105, Column: 1 }
+  - VarName:         B2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cloud_mlp.cpp, Line: 105, Column: 1 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            B2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./weights.h, Line: 203, Column: 0 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2B2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 233, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&) (.1)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 234, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 235, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 236, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'compute_l3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cloud_mlp.cpp, Line: 237, Column: 5 }
+Function:        _Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&) (.1)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cloud_mlp_top(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: cloud_mlp.cpp, Line: 211, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

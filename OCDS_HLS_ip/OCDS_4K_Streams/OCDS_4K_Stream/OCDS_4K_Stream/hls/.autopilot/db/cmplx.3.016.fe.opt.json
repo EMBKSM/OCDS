@@ -1,0 +1,107 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5 4 3 2 1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 211,
+    "instructions": 288,
+    "memory_accesses": 0,
+    "name": "cloud_mlp_top",
+    "total_instructions": 30511
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 12,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 0,
+    "instructions": 144,
+    "loads": {
+      "L": 65
+    },
+    "memory_accesses": 8,
+    "name": "_Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6__entry.aft.aft.aft.aft.aft.aft.aft",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 144
+  },
+  "2": {
+    "basicblocks": 1585,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 142,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 0,
+    "instructions": 14604,
+    "loads": {
+      "G": 258,
+      "L": 128
+    },
+    "memory_accesses": 835,
+    "name": "_Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6__entry.aft.aft.aft.aft.aft",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 14604
+  },
+  "3": {
+    "basicblocks": 1597,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 78,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 0,
+    "instructions": 14696,
+    "loads": {
+      "G": 260,
+      "L": 64
+    },
+    "memory_accesses": 901,
+    "name": "_Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6__entry.aft.aft.aft",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 14696
+  },
+  "4": {
+    "basicblocks": 97,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 18,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 0,
+    "instructions": 716,
+    "loads": {
+      "G": 10,
+      "L": 4
+    },
+    "memory_accesses": 91,
+    "name": "_Z13cloud_mlp_topRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6__entry.aft",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 716
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 30,
+    "instructions": 63,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "read_input",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 63
+  }
+}

@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Feb 11 10:37:04 2026
+# Process ID         : 3264
+# Current directory  : C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/vivado.log
+# Journal file       : C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip\vivado.jou
+# Running On         : Legion
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 68430 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72725 MB
+# Available Virtual  : 50723 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/hls_data.json outdir=C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip srcdir=C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/misc
+INFO: Copied 1073 verilog file(s) to C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/hdl/verilog
+INFO: Copied 544 vhdl file(s) to C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/drivers
+Generating 1 subcores in C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/subcore_prj:
+impl/misc/cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip.tcl
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 546.980 ; gain = 223.141
+INFO: Using COE_DIR=C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/hdl/verilog
+INFO: Generating cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip via file impl/misc/cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip'...
+INFO: Done generating cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip via file impl/misc/cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip.tcl
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+INFO: Copied 1 subcore files: C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/hdl/ip/cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip/cloud_mlp_top_fpext_32ns_64_1_no_dsp_1_ip.xci
+INFO: Import ports from HDL: C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/hdl/vhdl/cloud_mlp_top.vhd (cloud_mlp_top)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: Add axi4stream interface in_stream
+INFO: Add axi4stream interface out_stream
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+ipx::update_checksums: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 601.859 ; gain = 0.000
+INFO: Created IP C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/component.xml
+ipx::archive_core: Time (s): cpu = 00:00:01 ; elapsed = 00:00:42 . Memory (MB): peak = 601.859 ; gain = 0.000
+INFO: Created IP archive C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip/xilinx_com_hls_cloud_mlp_top_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 11 10:38:22 2026...

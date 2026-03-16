@@ -1,0 +1,46 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./cloud_mlp.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file './cloud_mlp.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./cloud_mlp.hpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file './cloud_mlp.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./weights.h' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file './weights.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./tb_cloud_mlp.cpp' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file './tb_cloud_mlp.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cloud_mlp_top' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xczu9eg-ffvb1156-2-e' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1465] Applying config ini 'clock=30ns' from hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=0.81ns' from hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.81ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.unsafe_math_optimizations=1' from hls_config.cfg(15)
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.233 seconds; current allocated memory: 151.957 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'cloud_mlp.cpp' ... 
+ERROR: [HLS 207-4638] use of undeclared identifier 'keep'; did you mean 'exp'? (cloud_mlp.cpp:120:23)
+INFO: [HLS 207-5482] 'exp' declared here (C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\x86_64-w64-mingw32\include\math.h:193:37)
+WARNING: [HLS 207-6125] address of function 'exp' will always evaluate to 'true' (cloud_mlp.cpp:120:23)
+INFO: [HLS 207-5224] prefix with the address-of operator to silence this warning (cloud_mlp.cpp:120:23)
+ERROR: [HLS 207-4638] use of undeclared identifier 'strb'; did you mean 'sqrt'? (cloud_mlp.cpp:121:23)
+INFO: [HLS 207-5482] 'sqrt' declared here (C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\x86_64-w64-mingw32\include\math.h:197:37)
+WARNING: [HLS 207-6125] address of function 'sqrt' will always evaluate to 'true' (cloud_mlp.cpp:121:23)
+INFO: [HLS 207-5224] prefix with the address-of operator to silence this warning (cloud_mlp.cpp:121:23)
+ERROR: [HLS 207-4637] use of undeclared identifier 'last' (cloud_mlp.cpp:122:23)
+ERROR: syntax check failed.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.764 seconds; peak allocated memory: 153.543 MB.

@@ -1,0 +1,4 @@
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_fsbl/build/CMakeFiles/print_build_info.dir
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_fsbl/build/CMakeFiles/edit_cache.dir
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_fsbl/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1034 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./cloud_mlp.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file './cloud_mlp.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./cloud_mlp.hpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file './cloud_mlp.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./weights.h' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file './weights.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./tb_cloud_mlp.cpp' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file './tb_cloud_mlp.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cloud_mlp_top' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xczu9eg-ffvb1156-2-e' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1465] Applying config ini 'clock=30ns' from hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=0.81ns' from hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.81ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.unsafe_math_optimizations=1' from hls_config.cfg(15)
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.581 seconds; current allocated memory: 150.430 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'cloud_mlp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.787 seconds; current allocated memory: 153.211 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 9,669 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 34,896 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20,278 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,798 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,107 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,869 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,868 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,870 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,913 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,001 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,997 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,975 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 40,467 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,135 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,100 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,098 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 214-275] In loop 'VITIS_LOOP_97_1 (cloud_mlp.cpp:97:26)', partially UNROLL (cloud_mlp.cpp:98:1) is converted into complete unroll due to PIPELINE pragma above (cloud_mlp.cpp:95:1) as a pipelined region cannot contain loops that are not fully unrolled (cloud_mlp.cpp:97:26)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'compute_l1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (cloud_mlp.cpp:68:21)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'compute_l2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (cloud_mlp.cpp:87:21)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'compute_l3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (cloud_mlp.cpp:101:21)
+INFO: [HLS 214-131] Inlining function 'hard_sigmoid(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (cloud_mlp.cpp:120:29)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_97_1' is marked as complete unroll implied by the pipeline pragma (cloud_mlp.cpp:97:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_83_1' is marked as complete unroll implied by the pipeline pragma (cloud_mlp.cpp:83:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_64_1' is marked as complete unroll implied by the pipeline pragma (cloud_mlp.cpp:64:26)
+INFO: [HLS 214-186] Unrolling loop 'Out_Loop' (cloud_mlp.cpp:115:15) in function 'write_output' completely with a factor of 64 (cloud_mlp.cpp:106:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_97_1' (cloud_mlp.cpp:97:26) in function 'compute_l3' completely with a factor of 128 (cloud_mlp.cpp:92:0)
+INFO: [HLS 214-188] Unrolling loop 'L2_Outer' (cloud_mlp.cpp:78:15) in function 'compute_l2' partially with a factor of 2 (cloud_mlp.cpp:73:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_83_1' (cloud_mlp.cpp:83:26) in function 'compute_l2' completely with a factor of 64 (cloud_mlp.cpp:73:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_64_1' (cloud_mlp.cpp:64:26) in function 'compute_l1' completely with a factor of 4 (cloud_mlp.cpp:59:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&)' (cloud_mlp.cpp:33:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (cloud_mlp.cpp:106:0)
+INFO: [HLS 214-248] Applying array_partition to 'input_arr': Complete partitioning on dimension 1. (cloud_mlp.cpp:141:12)
+INFO: [HLS 214-248] Applying array_partition to 'l1_out': Complete partitioning on dimension 1. (cloud_mlp.cpp:142:12)
+INFO: [HLS 214-248] Applying array_partition to 'l2_out': Complete partitioning on dimension 1. (cloud_mlp.cpp:143:12)
+INFO: [HLS 214-248] Applying array_partition to 'l3_out': Complete partitioning on dimension 1. (cloud_mlp.cpp:144:12)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'meta_stream' with compact=bit mode in 17-bits (cloud_mlp.cpp:147:29)
+INFO: [HLS 214-449] Partitioning array 'W1' dimension 2 due to constant index. (./weights.h:5:0)
+INFO: [HLS 214-449] Partitioning array 'W2' dimension 2 due to constant index. (./weights.h:73:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'W3' due to pipeline pragma (cloud_mlp.cpp:95:1)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W3': Complete partitioning on dimension 2. (./weights.h:205:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2': Complete partitioning on dimension 2. (./weights.h:73:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W1': Complete partitioning on dimension 2. (./weights.h:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 14.327 seconds; current allocated memory: 155.727 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 155.727 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.824 seconds; current allocated memory: 178.871 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.914 seconds; current allocated memory: 192.477 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'cloud_mlp_top' (cloud_mlp.cpp:133:1), detected/extracted 5 process function(s): 
+	 'read_input'
+	 'compute_l1'
+	 'compute_l2'
+	 'compute_l3'
+	 'write_output'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cloud_mlp.cpp:94:33) to (cloud_mlp.cpp:101:19) in function 'compute_l3'... converting 775 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cloud_mlp.cpp:78:33) to (cloud_mlp.cpp:87:19) in function 'compute_l2'... converting 391 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cloud_mlp.cpp:78:41) to (cloud_mlp.cpp:87:19) in function 'compute_l2'... converting 391 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cloud_mlp.cpp:61:33) to (cloud_mlp.cpp:68:19) in function 'compute_l1'... converting 31 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 6.724 seconds; current allocated memory: 260.484 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 7.932 seconds; current allocated memory: 398.020 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cloud_mlp_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_input' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 404.352 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 405.445 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_l1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln66_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln66_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln66_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln66_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'L1_Outer'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'L1_Outer'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.249 seconds; current allocated memory: 410.785 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 410.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_l2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_125) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_105) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_103) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_81) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_255) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_253) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_249) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_247) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_245) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_241) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_237) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_233) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_231) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_229) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_225) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_221) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_217) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_215) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_213) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_211) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_209) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_207) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_205) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_203) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_201) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_199) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_197) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_195) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_193) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_185) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_149) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_141) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_133) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85_129) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'L2_Outer'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 68, loop 'L2_Outer'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 11.059 seconds; current allocated memory: 461.895 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.437 seconds; current allocated memory: 461.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_l3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_255) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_253) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_249) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_247) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_245) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_241) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_237) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_233) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_231) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_229) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_225) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_221) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_217) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_215) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_213) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_211) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_209) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_207) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_205) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_203) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_201) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_199) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_197) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_195) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_193) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_185) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_149) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_141) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_133) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_125) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_105) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_103) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_81) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln99_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'L3_Outer'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 132, loop 'L3_Outer'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 10.612 seconds; current allocated memory: 505.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.161 seconds; current allocated memory: 505.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln117) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.962 seconds; current allocated memory: 505.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 505.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cloud_mlp_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 507.582 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 509.332 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_input' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_input'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.247 seconds; current allocated memory: 511.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_l1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'compute_l1' pipeline 'L1_Outer' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_8s_26s_26_4_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_l1'.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_B1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.908 seconds; current allocated memory: 532.082 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_l2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'compute_l2' pipeline 'L2_Outer' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'compute_l2' is 59097 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 130 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_26s_26_4_1': 128 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 130 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_l2'.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_B2_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_2_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_3_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_4_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_5_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_6_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_7_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_8_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_9_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_10_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_11_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_12_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_13_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_14_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_15_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_16_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_17_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_18_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_19_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_20_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_21_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_22_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_23_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_24_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_25_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_26_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_27_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_28_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_29_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_30_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_31_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_32_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_33_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_34_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_35_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_36_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_37_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_38_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_39_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_40_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_41_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_42_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_43_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_44_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_45_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_46_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_47_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_48_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_49_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_50_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_51_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_52_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_53_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_54_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_55_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_56_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_57_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_58_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_59_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_60_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_61_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_62_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_63_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 8 seconds. CPU system time: 1 seconds. Elapsed time: 11.263 seconds; current allocated memory: 680.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_l3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'compute_l3' pipeline 'L3_Outer' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'compute_l3' is 217018 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 129 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_26s_26_4_1': 128 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 129 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_l3'.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_B3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_16_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_17_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_18_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_19_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_20_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_21_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_22_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_23_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_24_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_25_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_26_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_27_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_28_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_29_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_30_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_31_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_32_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_33_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_34_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_35_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_36_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_37_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_38_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_39_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_40_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_41_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_42_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_43_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_44_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_45_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_46_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_47_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_48_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_49_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_50_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_51_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_52_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_53_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_54_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_55_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_56_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_57_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_58_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_59_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_60_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_61_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_62_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_63_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_64_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_65_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_66_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_67_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_68_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_69_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_70_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_71_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_72_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_73_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_74_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_75_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_76_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_77_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_78_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_79_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_80_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_81_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_82_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_83_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_84_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_85_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_86_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_87_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_88_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_89_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_90_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_91_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_92_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_93_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_94_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_95_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_96_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_97_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_98_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_99_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_100_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_101_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_102_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_103_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_104_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_105_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_106_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_107_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_108_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_109_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_110_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_111_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_112_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_113_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_114_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_115_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_116_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_117_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_118_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_119_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_120_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_121_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_122_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_123_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_124_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_125_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_126_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_127_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 10 seconds. CPU system time: 4 seconds. Elapsed time: 20.057 seconds; current allocated memory: 860.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_10ns_26s_26_4_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_10s_26s_26_4_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_11ns_26s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_11s_16s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_11s_26s_26_4_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_12ns_26s_26_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_12s_26s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_13s_26s_26_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_5ns_26s_26_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_6ns_26s_26_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_6s_26s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_7ns_26s_26_4_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_7s_26s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_8ns_26s_26_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_8s_26s_26_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_9ns_26s_26_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_9s_26s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_8ns_20ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 3 seconds. Elapsed time: 9.356 seconds; current allocated memory: 1001.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cloud_mlp_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'cloud_mlp_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cloud_mlp_top'.
+INFO: [RTMG 210-285] Implementing FIFO 'meta_stream_U(cloud_mlp_top_fifo_w17_d50_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_1_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_2_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_3_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_1_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_2_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_3_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_4_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_5_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_6_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_7_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_8_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_9_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_10_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_11_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_12_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_13_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_14_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_15_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_16_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_17_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_18_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_19_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_20_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_21_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_22_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_23_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_24_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_25_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_26_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_27_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_28_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_29_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_30_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_31_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_32_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_33_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_34_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_35_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_36_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_37_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_38_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_39_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_40_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_41_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_42_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_43_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_44_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_45_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_46_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_47_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_48_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_49_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_50_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_51_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_52_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_53_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_54_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_55_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_56_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_57_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_58_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_59_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_60_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_61_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_62_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_63_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_1_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_2_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_3_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_4_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_5_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_6_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_7_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_8_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_9_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_10_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_11_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_12_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_13_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_14_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_15_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_16_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_17_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_18_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_19_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_20_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_21_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_22_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_23_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_24_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_25_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_26_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_27_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_28_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_29_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_30_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_31_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_32_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_33_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_34_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_35_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_36_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_37_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_38_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_39_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_40_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_41_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_42_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_43_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_44_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_45_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_46_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_47_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_48_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_49_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_50_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_51_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_52_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_53_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_54_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_55_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_56_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_57_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_58_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_59_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_60_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_61_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_62_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_63_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_64_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_65_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_66_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_67_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_68_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_69_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_70_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_71_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_72_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_73_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_74_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_75_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_76_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_77_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_78_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_79_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_80_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_81_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_82_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_83_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_84_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_85_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_86_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_87_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_88_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_89_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_90_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_91_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_92_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_93_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_94_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_95_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_96_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_97_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_98_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_99_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_100_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_101_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_102_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_103_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_104_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_105_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_106_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_107_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_108_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_109_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_110_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_111_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_112_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_113_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_114_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_115_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_116_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_117_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_118_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_119_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_120_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_121_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_122_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_123_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_124_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_125_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_126_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_127_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_1_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_2_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_3_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_4_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_5_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_6_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_7_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_8_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_9_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_10_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_11_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_12_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_13_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_14_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_15_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_16_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_17_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_18_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_19_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_20_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_21_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_22_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_23_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_24_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_25_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_26_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_27_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_28_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_29_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_30_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_31_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_32_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_33_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_34_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_35_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_36_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_37_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_38_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_39_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_40_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_41_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_42_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_43_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_44_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_45_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_46_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_47_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_48_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_49_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_50_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_51_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_52_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_53_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_54_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_55_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_56_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_57_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_58_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_59_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_60_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_61_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_62_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_63_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 12.762 seconds; current allocated memory: 1013.590 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 5.783 seconds; current allocated memory: 1.007 GB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.086 seconds; current allocated memory: 1.079 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cloud_mlp_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for cloud_mlp_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 61.77 MHz
+INFO: [HLS 200-112] Total CPU user time: 62 seconds. Total CPU system time: 18 seconds. Total elapsed time: 139.401 seconds; peak allocated memory: 1.079 GB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 23s

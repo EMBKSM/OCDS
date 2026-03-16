@@ -1,0 +1,8 @@
+*.TIF
+*.tif
+OCDS_HLS_ip/mlp_training/
+
+*_sim_netlist.vhdl
+*_sim_netlist.v
+*.wdb
+*.wcfg

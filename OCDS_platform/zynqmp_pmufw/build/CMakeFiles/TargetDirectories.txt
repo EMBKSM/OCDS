@@ -1,0 +1,4 @@
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_pmufw/build/CMakeFiles/pmufw.elf.dir
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_pmufw/build/CMakeFiles/print_build_info.dir
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_pmufw/build/CMakeFiles/edit_cache.dir
+C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_pmufw/build/CMakeFiles/rebuild_cache.dir

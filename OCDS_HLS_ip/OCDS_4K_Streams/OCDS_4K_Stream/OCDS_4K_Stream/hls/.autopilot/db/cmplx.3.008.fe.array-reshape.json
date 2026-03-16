@@ -1,0 +1,107 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2 4 3 5",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 211,
+    "instructions": 1051,
+    "memory_accesses": 0,
+    "name": "cloud_mlp_top",
+    "total_instructions": 31285
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 30,
+    "instructions": 74,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "read_input",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 74
+  },
+  "2": {
+    "basicblocks": 96,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 18,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 54,
+    "instructions": 711,
+    "loads": {
+      "G": 10,
+      "L": 4
+    },
+    "memory_accesses": 91,
+    "name": "compute_l1",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 711
+  },
+  "3": {
+    "basicblocks": 1584,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 142,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 143,
+    "instructions": 14599,
+    "loads": {
+      "G": 258,
+      "L": 128
+    },
+    "memory_accesses": 835,
+    "name": "compute_l3",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 14599
+  },
+  "4": {
+    "basicblocks": 1596,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 78,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 93,
+    "instructions": 14693,
+    "loads": {
+      "G": 260,
+      "L": 64
+    },
+    "memory_accesses": 901,
+    "name": "compute_l2",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 14693
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 12,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 178,
+    "instructions": 157,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 72,
+    "name": "write_output",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 157
+  }
+}

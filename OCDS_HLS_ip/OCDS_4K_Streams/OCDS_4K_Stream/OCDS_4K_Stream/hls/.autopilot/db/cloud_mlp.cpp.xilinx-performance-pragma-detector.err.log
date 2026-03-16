@@ -1,0 +1,3 @@
+C:\OCDS\OCDS_4K_Streams\OCDS_4K_Stream\cloud_mlp.cpp:186:30: warning: address of array 'B_OUT' will always evaluate to 'true' [-Wpointer-bool-conversion]
+    data_t out_sum = (data_t)B_OUT;
+                     ~       ^~~~~

@@ -1,0 +1,247 @@
+<ENTRY>
+{
+ "thisFile": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\OCDS_4K_Stream.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/11/26 10:32:03",
+ "timestampMillis": "1770773523919",
+ "buildStep": {
+  "cmdId": "4e637460-2aa1-417f-bd03-75127032889f",
+  "name": "v++",
+  "logFile": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\logs\\OCDS_4K_Stream.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\hls_config.cfg --work_dir OCDS_4K_Stream ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\hls_config.cfg",
+   "--work_dir",
+   "OCDS_4K_Stream"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\hls_config.cfg",
+    "content": "part=xczu9eg-ffvb1156-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=1\nclock=25ns\nrelative_roots=cloud_mlp.cpp\nsyn.file=./cloud_mlp.cpp\nsyn.file=./cloud_mlp.hpp\nsyn.file=./weights.h\nsyn.top=cloud_mlp_top\ntb.file=./tb_cloud_mlp.cpp\ncsim.clean=1\nsyn.compile.unsafe_math_optimizations=1\nclock_uncertainty=0.675ns\nsyn.schedule.enable_dsp_full_reg=1"
+   }
+  ],
+  "cwd": "C:\\OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/26 10:32:03",
+ "timestampMillis": "1770773523919",
+ "status": {
+  "cmdId": "4e637460-2aa1-417f-bd03-75127032889f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/11/26 10:32:08",
+ "timestampMillis": "1770773528175",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cloud_mlp_top",
+     "file": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\cloud_mlp_top.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\cloud_mlp.cpp",
+     "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\cloud_mlp.hpp",
+     "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\weights.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/11/26 10:32:08",
+ "timestampMillis": "1770773528176",
+ "buildStep": {
+  "cmdId": "03900887-b452-4bfe-a87d-f944e14db0b9",
+  "name": "",
+  "logFile": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/26 10:32:08",
+ "timestampMillis": "1770773528177",
+ "status": {
+  "cmdId": "03900887-b452-4bfe-a87d-f944e14db0b9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:32:08",
+ "timestampMillis": "1770773528177",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:32:08",
+ "timestampMillis": "1770773528177",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:32:08",
+ "timestampMillis": "1770773528178",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:36:52",
+ "timestampMillis": "1770773812443",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:36:52",
+ "timestampMillis": "1770773812443",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:36:52",
+ "timestampMillis": "1770773812444",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/26 10:36:52",
+ "timestampMillis": "1770773812444",
+ "status": {
+  "cmdId": "03900887-b452-4bfe-a87d-f944e14db0b9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/26 10:38:24",
+ "timestampMillis": "1770773904039",
+ "status": {
+  "cmdId": "4e637460-2aa1-417f-bd03-75127032889f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:38:24",
+ "timestampMillis": "1770773904054",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\reports\\v++_compile_OCDS_4K_Stream_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/26 10:38:24",
+ "timestampMillis": "1770773904055",
+ "report": {
+  "path": "C:/OCDS\\OCDS_4K_Streams\\OCDS_4K_Stream\\OCDS_4K_Stream\\reports\\.db\\v++_compile_OCDS_4K_Stream_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,107 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 4 2 5 3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 211,
+    "instructions": 42,
+    "memory_accesses": 0,
+    "name": "cloud_mlp_top",
+    "total_instructions": 30978
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 30,
+    "instructions": 86,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "read_input",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 86
+  },
+  "2": {
+    "basicblocks": 1563,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 69,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 93,
+    "instructions": 15026,
+    "loads": {
+      "G": 260,
+      "L": 324
+    },
+    "memory_accesses": 1556,
+    "name": "compute_l2",
+    "stores": {
+      "L": 524
+    },
+    "total_instructions": 15026
+  },
+  "3": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 12,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 178,
+    "instructions": 128,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 12,
+    "name": "write_output",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 128
+  },
+  "4": {
+    "basicblocks": 63,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 12,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 54,
+    "instructions": 594,
+    "loads": {
+      "G": 10,
+      "L": 14
+    },
+    "memory_accesses": 58,
+    "name": "compute_l1",
+    "stores": {
+      "L": 22
+    },
+    "total_instructions": 594
+  },
+  "5": {
+    "basicblocks": 1551,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 133,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 143,
+    "instructions": 15102,
+    "loads": {
+      "G": 258,
+      "L": 386
+    },
+    "memory_accesses": 1546,
+    "name": "compute_l3",
+    "stores": {
+      "L": 518
+    },
+    "total_instructions": 15102
+  }
+}

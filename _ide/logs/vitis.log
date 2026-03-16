@@ -1,0 +1,396 @@
+13:01:42 INFO  : updated workspace path: C:\OCDS\cloude-detection-accelerator
+13:01:46 INFO  : Marking the target connection as default Local
+13:01:46 INFO  : Marking the target connection as default Linux Agent
+13:01:46 INFO  : Marking the target connection as default XRTServer
+13:01:46 INFO  : Marking the target connection as default LinuxEmulation
+13:01:46 INFO  : Marking the target connection as default QEMU
+13:01:46 INFO  : created .gitignore file for the project C:\OCDS\cloude-detection-accelerator
+13:01:52 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw
+13:01:54 INFO  : [INFO]: Initializing repositories
+13:01:54 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+13:01:54 INFO  : Successfully created repository data at C:\OCDS\cloude-detection-accelerator/_ide\.wsdata
+13:01:54 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\vip\AppData\Local\Temp\rigel_lopper_vip15068507587297762966 -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+13:01:54 INFO  : Embedded Template List generated successfully
+16:29:59 INFO  : Using sdt generation script from C:\AMDDesignTools\2025.2\Vitis\vitis-server\scripts\platformutil.tcl
+16:29:59 INFO  : cmd.exe, /C, sdtgen.bat C:\AMDDesignTools\2025.2\Vitis\vitis-server\scripts\platformutil.tcl C:\OCDS\cloude-detection-accelerator\mlp_ip_generater\mlp_cloud_detection_wrapper.xsa C:\OCDS\cloude-detection-accelerator\.rigel_lopper_temp_platform\mlp_cloud_detection_wrapper\hw\sdt
+16:30:20 INFO  : INFO: C:\OCDS\cloude-detection-accelerator\.rigel_lopper_temp_platform\mlp_cloud_detection_wrapper\hw\sdt exists. Files will be overwritten
+16:30:20 INFO  : -xsa C:\OCDS\cloude-detection-accelerator\mlp_ip_generater\mlp_cloud_detection_wrapper.xsa
+16:30:20 INFO  : -dir C:\OCDS\cloude-detection-accelerator\.rigel_lopper_temp_platform\mlp_cloud_detection_wrapper\hw\sdt
+16:30:20 INFO  : -board_dts 
+16:30:20 INFO  : -include_dts 
+16:30:20 INFO  : -repo C:/AMDDesignTools/2025.2/Vitis/data/system-device-tree-xlnx
+16:30:20 INFO  : -zocl disable
+16:30:20 INFO  : INFO: [Hsi 55-2053] elapsed time for repository (C:/AMDDesignTools/2025.2/Vitis/data/embeddedsw) loading 0 seconds
+16:30:20 INFO  : hsi::open_hw_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 271.605 ; gain = 187.047
+16:30:20 INFO  : SDT generated successfully
+16:30:20 INFO  : Lopper command for cpu List generation: lopper.bat --enhanced --werror -f -O C:\OCDS\cloude-detection-accelerator\.rigel_lopper -i lop-cpu-oslist.dts C:\OCDS\cloude-detection-accelerator\.rigel_lopper_temp_platform\mlp_cloud_detection_wrapper\hw\sdt\system-top.dts
+16:30:20 INFO  : cmd.exe, /C, lopper.bat --enhanced --werror -f -O C:\OCDS\cloude-detection-accelerator\.rigel_lopper -i lop-cpu-oslist.dts C:\OCDS\cloude-detection-accelerator\.rigel_lopper_temp_platform\mlp_cloud_detection_wrapper\hw\sdt\system-top.dts
+16:30:26 INFO  : CPU List generated successfully
+16:33:18 INFO  : Platform OCDS_platform creation started.
+16:33:19 INFO  : Lopper command for cpu List generation: lopper.bat --enhanced --werror -f -O C:\OCDS\cloude-detection-accelerator\.rigel_lopper -i lop-cpu-oslist.dts C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts
+16:33:19 INFO  : cmd.exe, /C, lopper.bat --enhanced --werror -f -O C:\OCDS\cloude-detection-accelerator\.rigel_lopper -i lop-cpu-oslist.dts C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts
+16:33:22 INFO  : CPU List generated successfully
+16:33:22 INFO  : SDT generated successfully.
+16:33:22 INFO  : ZYNQMP: Using the QEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_linux\qemu\qemu_args.txt
+16:33:22 INFO  : ZYNQMP: Using the PMUQEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_linux\qemu\pmu_args.txt
+16:33:22 INFO  : ZYNQMP: Using the QEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_standalone\qemu\qemu_args.txt
+16:33:22 INFO  : ZYNQMP: Using the QEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_standalone\qemu\qemu_args.txt
+16:33:22 INFO  : ZYNQMP: Using the PMUQEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_standalone\qemu\pmu_args.txt
+16:33:22 INFO  : ZYNQMP: Using the PMUQEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_standalone\qemu\pmu_args.txt
+16:33:22 INFO  : lopper command to generate BSP :empyro.bat create_bsp -w C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -p psu_cortexa53_0 -o standalone -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts -t zynqmp_fsbl -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:33:22 INFO  : lopper command to generate BSP :empyro.bat create_bsp -w C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -p psu_pmu_0 -o standalone -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts -t zynqmp_pmufw -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:33:22 INFO  : cmd.exe, /C, empyro.bat create_bsp -w C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -p psu_pmu_0 -o standalone -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts -t zynqmp_pmufw -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:33:22 INFO  : cmd.exe, /C, empyro.bat create_bsp -w C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -p psu_cortexa53_0 -o standalone -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts -t zynqmp_fsbl -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:33:59 INFO  : [INFO]: Starting domain creation
+16:33:59 INFO  : [INFO]: Found HLS driver within SDT, copying the sources
+16:33:59 INFO  : [INFO]: Generating Domain-specific DTS for psu_pmu_0
+16:33:59 INFO  : [INFO]: Generating required metadata from domain specific DT
+16:33:59 INFO  : CMake Warning at libsrc/xilsecure/src/CMakeLists.txt:31 (message):
+16:33:59 INFO  :   XilSecure library requires xilmailbox library in client mode.
+16:33:59 INFO  : 
+16:33:59 INFO  : 
+16:33:59 INFO  : STATUS: No Value specified, assigning default values.
+16:33:59 INFO  : [INFO]: Successfully created Domain at C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:33:59 INFO  : Successfully Generated Domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:33:59 INFO  : lopper command to create baremetal application :empyro.bat create_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -t zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -n pmufw -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:33:59 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:34:00 INFO  : [INFO]: Starting domain creation
+16:34:00 INFO  : [INFO]: Found HLS driver within SDT, copying the sources
+16:34:00 INFO  : [INFO]: Generating Domain-specific DTS for psu_cortexa53_0
+16:34:00 INFO  : [INFO]: Generating required metadata from domain specific DT
+16:34:00 INFO  : CMake Warning at libsrc/xilsecure/src/CMakeLists.txt:31 (message):
+16:34:00 INFO  :   XilSecure library requires xilmailbox library in client mode.
+16:34:00 INFO  : 
+16:34:00 INFO  : 
+16:34:00 INFO  : [INFO]: Successfully created Domain at C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:34:00 INFO  : Successfully Generated Domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:34:00 INFO  : lopper command to create baremetal application :empyro.bat create_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -t zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -n fsbl -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:34:00 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:34:01 INFO  : Successfully validated template zynqmp_pmufw
+16:34:01 INFO  : cmd.exe, /C, empyro.bat create_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -t zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -n pmufw -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:34:03 INFO  : Successfully validated template zynqmp_fsbl
+16:34:03 INFO  : cmd.exe, /C, empyro.bat create_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -t zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -n fsbl -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:34:08 INFO  : [INFO]: Generating Linker script for zynqmp_fsbl
+16:34:08 INFO  : [INFO]: Successfully Created Application sources at C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_fsbl
+16:34:08 INFO  : Successfully created Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl
+16:34:08 INFO  : Platform FSBL Boot domain added successfully.
+16:34:08 INFO  : ZYNQMP: Using the QEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_standalone\qemu\qemu_args.txt
+16:34:08 INFO  : ZYNQMP: Using the PMUQEMU args from install at  : C:\AMDDesignTools\2025.2\Vitis\data\emulation\platforms\zynqmp\sw\a53_standalone\qemu\pmu_args.txt
+16:34:08 INFO  : lopper command to generate BSP :empyro.bat create_bsp -w C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp -p psu_cortexa53_0 -o standalone -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts -t empty_application -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:34:08 INFO  : cmd.exe, /C, empyro.bat create_bsp -w C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp -p psu_cortexa53_0 -o standalone -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\hw\sdt\system-top.dts -t empty_application -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:34:08 INFO  : [INFO]: Generating Hardware Metadata for zynqmp_pmufw
+16:34:08 INFO  : [INFO]: Generating Linker script for zynqmp_pmufw
+16:34:08 INFO  : [INFO]: Successfully Created Application sources at C:/OCDS/cloude-detection-accelerator/OCDS_platform/zynqmp_pmufw
+16:34:08 INFO  : Successfully created Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw
+16:34:08 INFO  : Platform PMU FW domain added successfully.
+16:34:36 INFO  : [INFO]: Starting domain creation
+16:34:36 INFO  : [INFO]: Found HLS driver within SDT, copying the sources
+16:34:36 INFO  : [INFO]: Generating Domain-specific DTS for psu_cortexa53_0
+16:34:36 INFO  : [INFO]: Generating required metadata from domain specific DT
+16:34:36 INFO  : [INFO]: Successfully created Domain at C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:34:36 INFO  : Successfully Generated Domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:34:36 INFO  : Domain standalone_psu_cortexa53_0 added successfully.
+16:34:36 INFO  : created .gitignore file for the project C:\OCDS\cloude-detection-accelerator\OCDS_platform
+16:34:36 INFO  : Platform creation finished successfully.
+16:34:36 INFO  : Platform Quick Build initiated.
+16:34:42 INFO  : Generating Export directory
+16:34:42 INFO  : Generated platform metadata for creating application(s) based on platform OCDS_platform.
+16:43:06 INFO  : BSP build will be initiated for Domain zynqmp_pmufw
+16:43:06 INFO  : BSP build will be initiated for Domain zynqmp_fsbl
+16:43:06 INFO  : BSP build will be initiated for Domain standalone_psu_cortexa53_0
+16:43:06 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:43:06 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:43:06 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:43:06 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:43:06 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:43:06 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:43:06 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:43:06 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:43:06 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:43:06 INFO  : Domain reconfigured successfully
+16:43:06 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:43:06 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:43:06 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+16:43:07 INFO  : Domain reconfigured successfully
+16:43:07 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:43:07 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:43:07 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+16:43:07 INFO  : Domain reconfigured successfully
+16:43:07 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:43:07 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:43:07 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+16:43:24 INFO  : Domain build successfully
+16:43:24 INFO  : Domain build successfully
+16:43:25 INFO  : Domain build successfully
+16:43:25 INFO  : Generating Boot ELFs
+16:43:25 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+16:43:25 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+16:43:25 INFO  : [INFO]: Retargeting app
+16:43:25 INFO  : [INFO]: Updating link libraries based on new domain
+16:43:25 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl
+16:43:25 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+16:43:25 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+16:43:34 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+16:43:34 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+16:43:34 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+16:43:35 INFO  : [INFO]: Retargeting app
+16:43:35 INFO  : [INFO]: Updating link libraries based on new domain
+16:43:35 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw
+16:43:35 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+16:43:35 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+16:43:42 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+16:43:42 INFO  : Generating Export directory
+16:43:43 INFO  : Platform Build Finished successfully.
+16:55:39 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t empty_application -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:55:40 INFO  : Successfully validated template empty_application
+16:55:45 INFO  : lopper command to create baremetal application :empyro.bat create_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_ps\src -t empty_application -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -n OCDS_ps -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:55:45 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t empty_application -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:55:46 INFO  : Successfully validated template empty_application
+16:55:46 INFO  : cmd.exe, /C, empyro.bat create_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_ps\src -t empty_application -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -n OCDS_ps -r C:\OCDS\cloude-detection-accelerator\_ide\.wsdata\.repo.yaml
+16:55:50 INFO  : [INFO]: Generating Linker script for empty_application
+16:55:50 INFO  : [INFO]: Successfully Created Application sources at C:/OCDS/cloude-detection-accelerator/OCDS_ps/src
+16:55:50 INFO  : Successfully created Application C:\OCDS\cloude-detection-accelerator\OCDS_ps\src
+16:55:50 INFO  : created .gitignore file for the project C:\OCDS\cloude-detection-accelerator\OCDS_ps
+16:55:50 INFO  : The hardware specification used by project 'C:\OCDS\cloude-detection-accelerator\OCDS_ps' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+16:55:50 INFO  : The updated bitstream files are copied from platform to folder 'C:\OCDS\cloude-detection-accelerator\OCDS_ps\_ide\bitstream' in project 'C:\OCDS\cloude-detection-accelerator\OCDS_ps'.
+16:55:50 INFO  : The updated ps init files are copied from platform to folder 'C:\OCDS\cloude-detection-accelerator\OCDS_ps\_ide\psinit' in project 'C:\OCDS\cloude-detection-accelerator\OCDS_ps'.
+17:05:08 INFO  : BSP build will be initiated for Domain zynqmp_fsbl
+17:05:08 INFO  : BSP build will be initiated for Domain zynqmp_pmufw
+17:05:08 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:05:08 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:05:08 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:05:08 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:05:08 INFO  : BSP build will be initiated for Domain standalone_psu_cortexa53_0
+17:05:08 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:05:08 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:05:08 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:05:08 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:05:08 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:05:08 INFO  : Domain reconfigured successfully
+17:05:08 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:05:08 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:05:08 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:05:08 INFO  : Domain reconfigured successfully
+17:05:08 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:05:08 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:05:08 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:05:08 INFO  : Domain reconfigured successfully
+17:05:08 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:05:08 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:05:08 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:05:09 INFO  : Domain build successfully
+17:05:10 INFO  : Domain build successfully
+17:05:10 INFO  : Domain build successfully
+17:05:10 INFO  : Generating Boot ELFs
+17:05:10 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:05:10 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:05:10 INFO  : [INFO]: Retargeting app
+17:05:10 INFO  : [INFO]: Updating link libraries based on new domain
+17:05:10 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl
+17:05:10 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:05:10 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:05:16 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:05:16 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:05:16 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:05:17 INFO  : [INFO]: Retargeting app
+17:05:17 INFO  : [INFO]: Updating link libraries based on new domain
+17:05:17 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw
+17:05:17 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:05:17 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:05:22 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:05:22 INFO  : Generating Export directory
+17:05:22 INFO  : Platform Build Finished successfully.
+17:05:33 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:05:33 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:05:34 INFO  : [INFO]: Retargeting app
+17:05:34 INFO  : [INFO]: Updating link libraries based on new domain
+17:05:34 INFO  : Successfully retargeted Application c:\OCDS\cloude-detection-accelerator\OCDS_ps\src
+17:05:34 INFO  : Initiating build for the OCDS_ps component.
+17:05:34 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:05:34 INFO  : Command: cmd.exe /C set CC= && set CXX= && empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:06:00 INFO  : BSP build will be initiated for Domain zynqmp_fsbl
+17:06:00 INFO  : BSP build will be initiated for Domain zynqmp_pmufw
+17:06:00 INFO  : BSP build will be initiated for Domain standalone_psu_cortexa53_0
+17:06:00 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:06:00 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:06:00 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:06:00 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:06:00 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:06:00 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:06:00 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:06:00 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:06:00 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:06:00 INFO  : Domain reconfigured successfully
+17:06:00 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:06:00 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:06:00 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:06:00 INFO  : Domain reconfigured successfully
+17:06:00 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:06:00 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:06:00 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:06:00 INFO  : Domain reconfigured successfully
+17:06:00 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:06:00 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:06:00 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:06:01 INFO  : Domain build successfully
+17:06:02 INFO  : Domain build successfully
+17:06:02 INFO  : Domain build successfully
+17:06:02 INFO  : Generating Boot ELFs
+17:06:02 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:06:02 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:06:02 INFO  : [INFO]: Retargeting app
+17:06:02 INFO  : [INFO]: Updating link libraries based on new domain
+17:06:02 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl
+17:06:02 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:06:02 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:06:08 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:06:08 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:06:08 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:06:09 INFO  : [INFO]: Retargeting app
+17:06:09 INFO  : [INFO]: Updating link libraries based on new domain
+17:06:09 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw
+17:06:09 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:06:09 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:06:14 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:06:14 INFO  : Generating Export directory
+17:06:14 INFO  : Platform Build Finished successfully.
+17:06:25 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:06:25 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:06:25 INFO  : [INFO]: Retargeting app
+17:06:25 INFO  : [INFO]: Updating link libraries based on new domain
+17:06:25 INFO  : Successfully retargeted Application c:\OCDS\cloude-detection-accelerator\OCDS_ps\src
+17:06:25 INFO  : Initiating build for the OCDS_ps component.
+17:06:25 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:06:25 INFO  : Command: cmd.exe /C set CC= && set CXX= && empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:33:56 INFO  : XSDB server has started successfully from frontend.
+17:33:56 INFO  : It has taken  3secs.
+17:33:57 INFO  : Connection to XSDB Server established.
+17:33:57 INFO  : It has taken  1secs.
+17:33:59 INFO  : Done
+17:33:59 INFO  : connect -url tcp:127.0.0.1:3121
+17:34:06 INFO  : bpremove -all
+17:34:06 INFO  : source C:/AMDDesignTools/2025.2/Vitis/scripts/vitis/util/zynqmp_utils.tcl
+17:34:16 ERROR : Failed to initialize the hardware. Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:34:26 INFO  : BSP build will be initiated for Domain zynqmp_fsbl
+17:34:26 INFO  : BSP build will be initiated for Domain zynqmp_pmufw
+17:34:26 INFO  : BSP build will be initiated for Domain standalone_psu_cortexa53_0
+17:34:26 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:34:26 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:34:26 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:34:26 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:34:26 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:34:26 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:34:26 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:34:26 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:34:26 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:34:26 INFO  : Domain reconfigured successfully
+17:34:26 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:34:26 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:34:26 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:34:26 INFO  : Domain reconfigured successfully
+17:34:26 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:34:26 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:34:26 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:34:27 INFO  : Domain reconfigured successfully
+17:34:27 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:34:27 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:34:27 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:34:27 INFO  : Domain build successfully
+17:34:28 INFO  : Domain build successfully
+17:34:28 INFO  : Domain build successfully
+17:34:28 INFO  : Generating Boot ELFs
+17:34:28 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:34:28 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:34:28 INFO  : [INFO]: Retargeting app
+17:34:28 INFO  : [INFO]: Updating link libraries based on new domain
+17:34:28 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl
+17:34:28 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:34:28 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:34:35 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:34:35 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:34:35 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:34:35 INFO  : [INFO]: Retargeting app
+17:34:35 INFO  : [INFO]: Updating link libraries based on new domain
+17:34:35 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw
+17:34:35 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:34:35 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:34:40 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:34:40 INFO  : Generating Export directory
+17:34:41 INFO  : Platform Build Finished successfully.
+17:34:52 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:34:52 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:34:52 INFO  : [INFO]: Retargeting app
+17:34:52 INFO  : [INFO]: Updating link libraries based on new domain
+17:34:52 INFO  : Successfully retargeted Application c:\OCDS\cloude-detection-accelerator\OCDS_ps\src
+17:34:52 INFO  : Initiating build for the OCDS_ps component.
+17:34:52 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:34:52 INFO  : Command: cmd.exe /C set CC= && set CXX= && empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:35:58 INFO  : BSP build will be initiated for Domain zynqmp_fsbl
+17:35:58 INFO  : BSP build will be initiated for Domain standalone_psu_cortexa53_0
+17:35:58 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:35:58 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:35:58 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:35:58 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:35:58 INFO  : BSP build will be initiated for Domain zynqmp_pmufw
+17:35:58 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:35:58 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:35:58 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:35:58 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:35:58 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:35:58 INFO  : Domain reconfigured successfully
+17:35:58 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:35:58 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:35:58 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+17:35:58 INFO  : Domain reconfigured successfully
+17:35:58 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:35:58 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:35:58 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp
+17:35:58 INFO  : Domain reconfigured successfully
+17:35:58 INFO  : Generating BSP for the domain C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:35:58 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:35:58 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+17:35:59 INFO  : Domain build successfully
+17:36:00 INFO  : Domain build successfully
+17:36:00 INFO  : Domain build successfully
+17:36:00 INFO  : Generating Boot ELFs
+17:36:00 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:36:00 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\zynqmp_fsbl_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:36:00 INFO  : [INFO]: Retargeting app
+17:36:00 INFO  : [INFO]: Updating link libraries based on new domain
+17:36:00 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl
+17:36:00 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:36:00 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:36:07 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_fsbl\build
+17:36:07 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:36:07 INFO  : cmd.exe, /C, empyro.bat retarget_app -s C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\zynqmp_pmufw_bsp -b C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:36:07 INFO  : [INFO]: Retargeting app
+17:36:07 INFO  : [INFO]: Updating link libraries based on new domain
+17:36:07 INFO  : Successfully retargeted Application C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw
+17:36:07 INFO  : lopper command to build baremetal application :empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:36:07 INFO  : cmd.exe, /C, empyro.bat build_app --src_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw --build_dir C:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:36:12 INFO  : Successfully building the baremetal applicationC:\OCDS\cloude-detection-accelerator\OCDS_platform\zynqmp_pmufw\build
+17:36:12 INFO  : Generating Export directory
+17:36:13 INFO  : Platform Build Finished successfully.
+17:36:24 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:36:24 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -d C:\OCDS\cloude-detection-accelerator\OCDS_platform\export\OCDS_platform\sw\standalone_psu_cortexa53_0 -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:36:24 INFO  : [INFO]: Retargeting app
+17:36:24 INFO  : [INFO]: Updating link libraries based on new domain
+17:36:24 INFO  : Successfully retargeted Application c:\OCDS\cloude-detection-accelerator\OCDS_ps\src
+17:36:24 INFO  : Initiating build for the OCDS_ps component.
+17:36:24 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:36:24 INFO  : Command: cmd.exe /C set CC= && set CXX= && empyro.bat build_app -s c:\OCDS\cloude-detection-accelerator\OCDS_ps\src -b c:\OCDS\cloude-detection-accelerator\OCDS_ps\build
+17:39:48 INFO  : connection terminated
+17:39:48 INFO  : connection terminated
+17:39:48 INFO  : scheduling shutdown timer for 2 seconds ...
+17:39:50 INFO  : Terminating Vitis C++ Server
+17:39:50 INFO  : Vitis C++ Server terminated

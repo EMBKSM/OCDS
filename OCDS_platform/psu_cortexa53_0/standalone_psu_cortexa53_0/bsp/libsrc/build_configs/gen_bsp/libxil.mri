@@ -1,0 +1,31 @@
+create libxil.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/zdma/src/libzdma.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/wdtps/src/libwdtps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/video_common/src/libvideo_common.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/usbpsu/src/libusbpsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/libuartps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/ttcps/src/libttcps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/sysmonpsu/src/libsysmonpsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/libsdps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/libscugic.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/rtcpsu/src/librtcpsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/resetps/src/libresetps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/qspipsu/src/libqspipsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/pciepsu/src/libpciepsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/ipipsu/src/libipipsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src/libiicps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/libgpiops.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/libemacps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/dppsu/src/libdppsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/dpdma/src/libdpdma.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/ddrcpsu/src/libddrcpsu.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/csudma/src/libcsudma.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/libcoresightps_dcc.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/cloud_mlp_top/src/libcloud_mlp_top.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/clockps/src/libclockps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/canps/src/libcanps.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/axipmon/src/libaxipmon.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/axidma/src/libaxidma.a
+addlib C:/OCDS/cloude-detection-accelerator/OCDS_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/avbuf/src/libavbuf.a
+save
+end

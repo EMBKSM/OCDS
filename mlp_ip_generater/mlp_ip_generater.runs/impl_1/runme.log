@@ -1,0 +1,1066 @@
+
+*** Running vivado
+    with args -log mlp_cloud_detection_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source mlp_cloud_detection_wrapper.tcl -notrace
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Feb 11 15:31:24 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mlp_cloud_detection_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 538.961 ; gain = 220.074
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/OCDS/cloude-detection-accelerator/OCDS_HLS_ip/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 676.879 ; gain = 132.941
+Command: link_design -top mlp_cloud_detection_wrapper -part xczu9eg-ffvb1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_dma_0_0/mlp_cloud_detection_axi_dma_0_0.dcp' for cell 'mlp_cloud_detection_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/mlp_cloud_detection_axi_smc_0.dcp' for cell 'mlp_cloud_detection_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_cloud_mlp_top_0_0/mlp_cloud_detection_cloud_mlp_top_0_0.dcp' for cell 'mlp_cloud_detection_i/cloud_mlp_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/mlp_cloud_detection_ddr4_0_0.dcp' for cell 'mlp_cloud_detection_i/ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_rst_ddr4_0_300M_0/mlp_cloud_detection_rst_ddr4_0_300M_0.dcp' for cell 'mlp_cloud_detection_i/rst_ddr4_0_300M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_rst_ps8_0_99M_0/mlp_cloud_detection_rst_ps8_0_99M_0.dcp' for cell 'mlp_cloud_detection_i/rst_ps8_0_99M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_zynq_ultra_ps_e_0_0/mlp_cloud_detection_zynq_ultra_ps_e_0_0.dcp' for cell 'mlp_cloud_detection_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_interconnect_0_imp_xbar_1/mlp_cloud_detection_axi_interconnect_0_imp_xbar_1.dcp' for cell 'mlp_cloud_detection_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_interconnect_0_imp_auto_pc_0/mlp_cloud_detection_axi_interconnect_0_imp_auto_pc_0.dcp' for cell 'mlp_cloud_detection_i/axi_interconnect_0/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1961.312 ; gain = 17.129
+INFO: [Netlist 29-17] Analyzing 6951 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: mlp_cloud_detection_i/ddr4_0 UUID: 6c812670-166f-5e52-b6e5-0040f0ea3731 
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_zynq_ultra_ps_e_0_0/mlp_cloud_detection_zynq_ultra_ps_e_0_0.xdc] for cell 'mlp_cloud_detection_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_zynq_ultra_ps_e_0_0/mlp_cloud_detection_zynq_ultra_ps_e_0_0.xdc] for cell 'mlp_cloud_detection_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:4]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:4]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:4]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:7]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:7]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:7]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:10]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:10]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:10]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:13]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:13]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:13]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:16]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:16]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-1' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:16]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:19]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:19]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-2' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:19]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:22]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:22]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:22]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:25]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:25]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:25]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:28]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:28]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:28]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:31]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:31]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:31]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:34]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:34]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:34]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:37]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:37]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc:37]
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_0/bd_e374_microblaze_I_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_1/bd_e374_rst_0_0_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_1/bd_e374_rst_0_0_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_2/bd_e374_ilmb_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_2/bd_e374_ilmb_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_3/bd_e374_dlmb_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_3/bd_e374_dlmb_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_10/bd_e374_iomodule_0_0_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/bd_0/ip/ip_10/bd_e374_iomodule_0_0_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/ip_0/mlp_cloud_detection_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/ip_0/mlp_cloud_detection_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/par/mlp_cloud_detection_ddr4_0_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/par/mlp_cloud_detection_ddr4_0_0.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_dma_0_0/mlp_cloud_detection_axi_dma_0_0.xdc] for cell 'mlp_cloud_detection_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_dma_0_0/mlp_cloud_detection_axi_dma_0_0.xdc] for cell 'mlp_cloud_detection_i/axi_dma_0/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/bd_0/ip/ip_1/bd_e92e_psr0_0_board.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/bd_0/ip/ip_1/bd_e92e_psr0_0_board.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/bd_0/ip/ip_2/bd_e92e_psr_aclk_0_board.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/bd_0/ip/ip_2/bd_e92e_psr_aclk_0_board.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/bd_0/ip/ip_3/bd_e92e_psr_aclk1_0_board.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/bd_0/ip/ip_3/bd_e92e_psr_aclk1_0_board.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/smartconnect.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/smartconnect.xdc:3]
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_smc_0/smartconnect.xdc] for cell 'mlp_cloud_detection_i/axi_smc/inst'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_rst_ps8_0_99M_0/mlp_cloud_detection_rst_ps8_0_99M_0_board.xdc] for cell 'mlp_cloud_detection_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_rst_ps8_0_99M_0/mlp_cloud_detection_rst_ps8_0_99M_0_board.xdc] for cell 'mlp_cloud_detection_i/rst_ps8_0_99M/U0'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_rst_ddr4_0_300M_0/mlp_cloud_detection_rst_ddr4_0_300M_0_board.xdc] for cell 'mlp_cloud_detection_i/rst_ddr4_0_300M/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_rst_ddr4_0_300M_0/mlp_cloud_detection_rst_ddr4_0_300M_0_board.xdc] for cell 'mlp_cloud_detection_i/rst_ddr4_0_300M/U0'
+Parsing XDC File [C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.srcs/constrs_1/new/pins.xdc]
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/mlp_cloud_detection_ddr4_0_0_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/mlp_cloud_detection_ddr4_0_0_board.xdc] for cell 'mlp_cloud_detection_i/ddr4_0/inst'
+Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_dma_0_0/mlp_cloud_detection_axi_dma_0_0_clocks.xdc] for cell 'mlp_cloud_detection_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_axi_dma_0_0/mlp_cloud_detection_axi_dma_0_0_clocks.xdc] for cell 'mlp_cloud_detection_i/axi_dma_0/U0'
+WARNING: [Constraints 18-401] set_max_delay: 'mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg[0]_i_1' is not a valid endpoint. [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:59]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg[0]_i_1' is not a valid endpoint. [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:59]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+INFO: [Project 1-1714] 110 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'mlp_cloud_detection_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Project 1-1687] 1 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.141 . Memory (MB): peak = 3769.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 772 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 521 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 2 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 18 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 71 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 110 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 3 instances
+
+24 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:02:26 ; elapsed = 00:02:15 . Memory (MB): peak = 3769.773 ; gain = 3092.895
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3769.773 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1ecf5ade9
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:23 . Memory (MB): peak = 3769.773 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize MIG Cores
+INFO: [Mig 66-454] Using cached IP synthesis design for IP xilinx.com:ip:ddr4_phy:2.2, cache-ID = 3332027447c88e6b.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.370 . Memory (MB): peak = 4265.598 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 4265.598 ; gain = 0.000
+all_fanout: Time (s): cpu = 00:00:35 ; elapsed = 00:00:22 . Memory (MB): peak = 4265.598 ; gain = 0.000
+read_xdc: Time (s): cpu = 00:00:49 ; elapsed = 00:00:35 . Memory (MB): peak = 4265.598 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.136 . Memory (MB): peak = 4265.598 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize MIG Cores | Checksum: 2a42caceb
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:57 . Memory (MB): peak = 4265.598 ; gain = 40.336
+
+Phase 1.1.2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 148d9525c0b9b603.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 4282.656 ; gain = 0.000
+get_clocks: Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 4282.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.249 . Memory (MB): peak = 4282.656 ; gain = 0.000
+Phase 1.1.2 Generate And Synthesize Debug Cores | Checksum: 256af0327
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:35 . Memory (MB): peak = 4282.656 ; gain = 57.395
+Phase 1.1 Core Generation And Design Setup | Checksum: 256af0327
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:35 . Memory (MB): peak = 4282.656 ; gain = 57.395
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 256af0327
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:36 . Memory (MB): peak = 4282.656 ; gain = 57.395
+Phase 1 Initialization | Checksum: 256af0327
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:36 . Memory (MB): peak = 4282.656 ; gain = 57.395
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 256af0327
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:36 . Memory (MB): peak = 4380.289 ; gain = 155.027
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 256af0327
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:42 . Memory (MB): peak = 4380.289 ; gain = 155.027
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 256af0327
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:42 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Phase 2 Timer Update And Timing Data Collection | Checksum: 256af0327
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:42 . Memory (MB): peak = 4380.289 ; gain = 155.027
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 12386 inverters resulting in an inversion of 54595 pins
+INFO: [Opt 31-138] Pushed 161 inverter(s) to 7263 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 26529f5ed
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:02:19 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Retarget | Checksum: 26529f5ed
+INFO: [Opt 31-389] Phase Retarget created 9594 cells and removed 53475 cells
+INFO: [Opt 31-1021] In phase Retarget, 109 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 1298 inverter(s) to 1684 load pin(s).
+Phase 4 Constant propagation | Checksum: 2a4d33470
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:39 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Constant propagation | Checksum: 2a4d33470
+INFO: [Opt 31-389] Phase Constant propagation created 33386 cells and removed 65937 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 108 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.451 . Memory (MB): peak = 4380.289 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.375 . Memory (MB): peak = 4380.289 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1fa0a0a8b
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:50 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Sweep | Checksum: 1fa0a0a8b
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2305 cells
+INFO: [Opt 31-1021] In phase Sweep, 2072 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/sys_clk_in_BUFG_inst to drive 2 load(s) on clock net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/diff_input_clk.u_ibufg_sys_clk/O
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 6 BUFG optimization | Checksum: 28390e428
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:53 . Memory (MB): peak = 4380.289 ; gain = 155.027
+BUFG optimization | Checksum: 28390e428
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 5 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 28390e428
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:54 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Shift Register Optimization | Checksum: 28390e428
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 1 pins
+Phase 8 Post Processing Netlist | Checksum: 23a61ee6e
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:02:55 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Post Processing Netlist | Checksum: 23a61ee6e
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 204 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1f7eab02a
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:03:11 . Memory (MB): peak = 4380.289 ; gain = 155.027
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.516 . Memory (MB): peak = 4380.289 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1f7eab02a
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:03:11 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Phase 9 Finalization | Checksum: 1f7eab02a
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:03:11 . Memory (MB): peak = 4380.289 ; gain = 155.027
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |            9594  |           53475  |                                            109  |
+|  Constant propagation         |           33386  |           65937  |                                            108  |
+|  Sweep                        |               0  |            2305  |                                           2072  |
+|  BUFG optimization            |               1  |               5  |                                              1  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            204  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1f7eab02a
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:03:11 . Memory (MB): peak = 4380.289 ; gain = 155.027
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 548 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 1096
+Ending PowerOpt Patch Enables Task | Checksum: 1f7eab02a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1f7eab02a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:55 . Memory (MB): peak = 5410.270 ; gain = 1029.980
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1f7eab02a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 5410.270 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+78 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:05:50 ; elapsed = 00:04:35 . Memory (MB): peak = 5410.270 ; gain = 1640.496
+INFO: [Vivado 12-24828] Executing command : report_drc -file mlp_cloud_detection_wrapper_drc_opted.rpt -pb mlp_cloud_detection_wrapper_drc_opted.pb -rpx mlp_cloud_detection_wrapper_drc_opted.rpx
+Command: report_drc -file mlp_cloud_detection_wrapper_drc_opted.rpt -pb mlp_cloud_detection_wrapper_drc_opted.pb -rpx mlp_cloud_detection_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.runs/impl_1/mlp_cloud_detection_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 5410.270 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 5410.270 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.367 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.509 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.572 . Memory (MB): peak = 5410.270 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.runs/impl_1/mlp_cloud_detection_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 5410.270 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14d683319
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 5410.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 5410.270 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 145d2e563
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 5410.270 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 17e6c7e32
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 17e6c7e32
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 1 Placer Initialization | Checksum: 17e6c7e32
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:14 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 16e8e27c1
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:02:45 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 25cb99b79
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:02:48 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 25cb99b79
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:03:02 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 2bef9cf2f
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:11 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 2bef9cf2f
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:11 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 2.1.1 Partition Driven Placement | Checksum: 2bef9cf2f
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:11 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 2.1 Floorplanning | Checksum: 2bef9cf2f
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:11 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2bef9cf2f
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:11 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 2729b81e7
+
+Time (s): cpu = 00:04:47 ; elapsed = 00:03:12 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 17e576739
+
+Time (s): cpu = 00:08:55 ; elapsed = 00:05:49 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1b8262de9
+
+Time (s): cpu = 00:09:18 ; elapsed = 00:06:01 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 41517 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 17454 nets or LUTs. Breaked 0 LUT, combined 17454 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 26 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 26 nets.  Re-placed 2390 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 26 nets or cells. Created 0 new cell, deleted 759 existing cells and moved 2390 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.499 . Memory (MB): peak = 6342.254 ; gain = 0.000
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 6342.254 ; gain = 0.000
+INFO: [Physopt 32-46] Identified 4 candidate nets for critical-cell optimization.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[63]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[2]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[63]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[5]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[63]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[1]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-782] Net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[63] was not replicated
+INFO: [Physopt 32-780] Instance mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[24]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[24]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-571] Net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[24] was not replicated.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[7]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[1].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[2]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[7]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[1].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[5]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[7]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[1].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[1]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-782] Net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR[7] was not replicated
+INFO: [Physopt 32-780] Instance mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ODT_dly_reg[0][7]_0[2]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[1].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[5].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[7]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ODT_dly_reg[0][7]_0[2]_repN and pin mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[1].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[5].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[5]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-782] Net mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ODT_dly_reg[0][7]_0[2] was not replicated
+INFO: [Physopt 32-780] Instance mlp_cloud_detection_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 6342.254 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |          17454  |                 17454  |           0  |           1  |  00:00:18  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |            759  |                    26  |           0  |           1  |  00:00:09  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           3  |           1  |  00:00:00  |
+|  Total                                            |            0  |          18213  |                 17480  |           3  |          11  |  00:00:29  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1e3399620
+
+Time (s): cpu = 00:10:11 ; elapsed = 00:06:48 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 2.5 Global Place Phase2 | Checksum: 23f42b0a2
+
+Time (s): cpu = 00:12:29 ; elapsed = 00:08:07 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 2 Global Placement | Checksum: 23f42b0a2
+
+Time (s): cpu = 00:12:30 ; elapsed = 00:08:07 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 23fe0d513
+
+Time (s): cpu = 00:13:03 ; elapsed = 00:08:26 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1733ca174
+
+Time (s): cpu = 00:13:22 ; elapsed = 00:08:39 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1b51ab161
+
+Time (s): cpu = 00:14:09 ; elapsed = 00:09:06 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 152c6e62a
+
+Time (s): cpu = 00:14:59 ; elapsed = 00:09:52 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 3.3.2 Slice Area Swap | Checksum: 152c6e62a
+
+Time (s): cpu = 00:15:00 ; elapsed = 00:09:53 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 3.3 Small Shape DP | Checksum: 291459865
+
+Time (s): cpu = 00:16:13 ; elapsed = 00:10:32 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 26cbc9fe2
+
+Time (s): cpu = 00:16:27 ; elapsed = 00:10:46 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1cafb9830
+
+Time (s): cpu = 00:16:28 ; elapsed = 00:10:46 . Memory (MB): peak = 6342.254 ; gain = 931.984
+Phase 3 Detail Placement | Checksum: 1cafb9830
+
+Time (s): cpu = 00:16:29 ; elapsed = 00:10:47 . Memory (MB): peak = 6342.254 ; gain = 931.984
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1f8ce113a
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.296 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1b74bf00a
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 6470.039 ; gain = 0.000
+INFO: [Place 46-35] Processed net mlp_cloud_detection_i/cloud_mlp_top_0/inst/compute_l3_U0/grp_fu_10000_ce, inserted BUFG to drive 1588 loads.
+INFO: [Place 46-45] Replicated bufg driver mlp_cloud_detection_i/cloud_mlp_top_0/inst/compute_l3_U0/ap_done_reg_reg_inv_replica
+INFO: [Place 46-35] Processed net mlp_cloud_detection_i/cloud_mlp_top_0/inst/compute_l2_U0/grp_fu_10029_ce, inserted BUFG to drive 1589 loads.
+INFO: [Place 46-45] Replicated bufg driver mlp_cloud_detection_i/cloud_mlp_top_0/inst/compute_l2_U0/ap_done_reg_reg_inv_replica
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 2, Replicated BUFG Driver: 2, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 275b44c38
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 6470.039 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 29bc71f05
+
+Time (s): cpu = 00:18:40 ; elapsed = 00:12:23 . Memory (MB): peak = 6470.039 ; gain = 1059.770
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.544. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2697e6787
+
+Time (s): cpu = 00:18:50 ; elapsed = 00:12:32 . Memory (MB): peak = 6470.039 ; gain = 1059.770
+
+Time (s): cpu = 00:18:50 ; elapsed = 00:12:32 . Memory (MB): peak = 6470.039 ; gain = 1059.770
+Phase 4.1 Post Commit Optimization | Checksum: 2697e6787
+
+Time (s): cpu = 00:18:52 ; elapsed = 00:12:33 . Memory (MB): peak = 6470.039 ; gain = 1059.770
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.338 . Memory (MB): peak = 6485.898 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 21e0014d5
+
+Time (s): cpu = 00:19:20 ; elapsed = 00:12:51 . Memory (MB): peak = 6485.898 ; gain = 1075.629
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                2x2|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 21e0014d5
+
+Time (s): cpu = 00:19:21 ; elapsed = 00:12:52 . Memory (MB): peak = 6485.898 ; gain = 1075.629
+Phase 4.3 Placer Reporting | Checksum: 21e0014d5
+
+Time (s): cpu = 00:19:22 ; elapsed = 00:12:53 . Memory (MB): peak = 6485.898 ; gain = 1075.629
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.182 . Memory (MB): peak = 6485.898 ; gain = 0.000
+
+Time (s): cpu = 00:19:23 ; elapsed = 00:12:53 . Memory (MB): peak = 6485.898 ; gain = 1075.629
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1369909ca
+
+Time (s): cpu = 00:19:24 ; elapsed = 00:12:54 . Memory (MB): peak = 6485.898 ; gain = 1075.629
+Ending Placer Task | Checksum: 4fc38483
+
+Time (s): cpu = 00:19:25 ; elapsed = 00:12:55 . Memory (MB): peak = 6485.898 ; gain = 1075.629
+150 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:20:10 ; elapsed = 00:13:24 . Memory (MB): peak = 6485.898 ; gain = 1075.629
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file mlp_cloud_detection_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.307 . Memory (MB): peak = 6485.898 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file mlp_cloud_detection_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.284 . Memory (MB): peak = 6485.898 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mlp_cloud_detection_wrapper_utilization_placed.rpt -pb mlp_cloud_detection_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.643 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.547 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.320 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 6485.898 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.runs/impl_1/mlp_cloud_detection_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:37 . Memory (MB): peak = 6485.898 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.547 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+161 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:39 . Memory (MB): peak = 6485.898 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.466 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.500 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.307 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 6485.898 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.runs/impl_1/mlp_cloud_detection_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 1ce26d92 ConstDB: 0 ShapeSum: 5c25efb RouteDB: 2d1eb7f6
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.589 . Memory (MB): peak = 6485.898 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 6df11a1c | NumContArr: 90939c00 | Constraints: 72840fe9 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 233b1c0a2
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:45 . Memory (MB): peak = 6485.898 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 233b1c0a2
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:46 . Memory (MB): peak = 6485.898 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 233b1c0a2
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:46 . Memory (MB): peak = 6485.898 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 2117d5732
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:53 . Memory (MB): peak = 6485.898 ; gain = 0.000
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 192c2636d
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:12 . Memory (MB): peak = 6485.898 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.707  | TNS=0.000  | WHS=-0.230 | THS=-8.921 |
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 21693839b
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:02:02 . Memory (MB): peak = 6698.602 ; gain = 212.703
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.707  | TNS=0.000  | WHS=-0.295 | THS=-14.890|
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 256ca793b
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:02:03 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 2.6 Soft Constraint Pins - Fast Budgeting
+Phase 2.6 Soft Constraint Pins - Fast Budgeting | Checksum: 256ca793b
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:02:04 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000483956 %
+  Global Horizontal Routing Utilization  = 0.000165739 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 214159
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 164885
+  Number of Partially Routed Nets     = 49274
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 161b24970
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:02:08 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 161b24970
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:02:08 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 33d0e45af
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:02:31 . Memory (MB): peak = 6698.602 ; gain = 212.703
+Phase 4 Initial Routing | Checksum: 2d97df232
+
+Time (s): cpu = 00:04:12 ; elapsed = 00:02:32 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Congested CLBs and Nets are dumped in: iter_3_CongestedCLBsAndNets.txt
+ Number of Nodes with overlaps = 27750
+ Number of Nodes with overlaps = 1337
+ Number of Nodes with overlaps = 57
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.499  | TNS=0.000  | WHS=-0.011 | THS=-0.017 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 223538fda
+
+Time (s): cpu = 00:07:26 ; elapsed = 00:04:33 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 5.2 Additional Iteration for Hold
+Phase 5.2 Additional Iteration for Hold | Checksum: 2630aaf89
+
+Time (s): cpu = 00:07:27 ; elapsed = 00:04:34 . Memory (MB): peak = 6698.602 ; gain = 212.703
+Phase 5 Rip-up And Reroute | Checksum: 2630aaf89
+
+Time (s): cpu = 00:07:28 ; elapsed = 00:04:34 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.499  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.499  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Delay CleanUp | Checksum: 235014d6e
+
+Time (s): cpu = 00:08:01 ; elapsed = 00:04:54 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 235014d6e
+
+Time (s): cpu = 00:08:01 ; elapsed = 00:04:54 . Memory (MB): peak = 6698.602 ; gain = 212.703
+Phase 6 Delay and Skew Optimization | Checksum: 235014d6e
+
+Time (s): cpu = 00:08:02 ; elapsed = 00:04:54 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.499  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1b165f100
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:05:07 . Memory (MB): peak = 6698.602 ; gain = 212.703
+Phase 7 Post Hold Fix | Checksum: 1b165f100
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:05:08 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 6.26198 %
+  Global Horizontal Routing Utilization  = 7.36867 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 1b165f100
+
+Time (s): cpu = 00:08:25 ; elapsed = 00:05:09 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1b165f100
+
+Time (s): cpu = 00:08:26 ; elapsed = 00:05:09 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1b165f100
+
+Time (s): cpu = 00:08:46 ; elapsed = 00:05:26 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 161e2a1f3
+
+Time (s): cpu = 00:08:46 ; elapsed = 00:05:27 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 161e2a1f3
+
+Time (s): cpu = 00:08:48 ; elapsed = 00:05:28 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Phase 13 Post Router Timing
+
+Phase 13.1 Update Timing
+Phase 13.1 Update Timing | Checksum: 161e2a1f3
+
+Time (s): cpu = 00:09:08 ; elapsed = 00:05:40 . Memory (MB): peak = 6698.602 ; gain = 212.703
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.499  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 13 Post Router Timing | Checksum: 161e2a1f3
+
+Time (s): cpu = 00:09:08 ; elapsed = 00:05:41 . Memory (MB): peak = 6698.602 ; gain = 212.703
+Total Elapsed time in route_design: 340.597 secs
+
+Phase 14 Post-Route Event Processing
+Phase 14 Post-Route Event Processing | Checksum: 12b5b6413
+
+Time (s): cpu = 00:09:10 ; elapsed = 00:05:42 . Memory (MB): peak = 6698.602 ; gain = 212.703
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 12b5b6413
+
+Time (s): cpu = 00:09:13 ; elapsed = 00:05:43 . Memory (MB): peak = 6698.602 ; gain = 212.703
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+176 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:09:14 ; elapsed = 00:05:45 . Memory (MB): peak = 6698.602 ; gain = 212.703
+INFO: [Vivado 12-24828] Executing command : report_drc -file mlp_cloud_detection_wrapper_drc_routed.rpt -pb mlp_cloud_detection_wrapper_drc_routed.pb -rpx mlp_cloud_detection_wrapper_drc_routed.rpx
+Command: report_drc -file mlp_cloud_detection_wrapper_drc_routed.rpt -pb mlp_cloud_detection_wrapper_drc_routed.pb -rpx mlp_cloud_detection_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.runs/impl_1/mlp_cloud_detection_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:38 ; elapsed = 00:00:23 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_methodology -file mlp_cloud_detection_wrapper_methodology_drc_routed.rpt -pb mlp_cloud_detection_wrapper_methodology_drc_routed.pb -rpx mlp_cloud_detection_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file mlp_cloud_detection_wrapper_methodology_drc_routed.rpt -pb mlp_cloud_detection_wrapper_methodology_drc_routed.pb -rpx mlp_cloud_detection_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.runs/impl_1/mlp_cloud_detection_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:47 ; elapsed = 00:01:00 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file mlp_cloud_detection_wrapper_timing_summary_routed.rpt -pb mlp_cloud_detection_wrapper_timing_summary_routed.pb -rpx mlp_cloud_detection_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:46 ; elapsed = 00:00:34 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file mlp_cloud_detection_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file mlp_cloud_detection_wrapper_route_status.rpt -pb mlp_cloud_detection_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file mlp_cloud_detection_wrapper_power_routed.rpt -pb mlp_cloud_detection_wrapper_power_summary_routed.pb -rpx mlp_cloud_detection_wrapper_power_routed.rpx
+Command: report_power -file mlp_cloud_detection_wrapper_power_routed.rpt -pb mlp_cloud_detection_wrapper_power_summary_routed.pb -rpx mlp_cloud_detection_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+193 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:05 ; elapsed = 00:00:51 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file mlp_cloud_detection_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file mlp_cloud_detection_wrapper_bus_skew_routed.rpt -pb mlp_cloud_detection_wrapper_bus_skew_routed.pb -rpx mlp_cloud_detection_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:04:28 ; elapsed = 00:02:58 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.673 . Memory (MB): peak = 6698.602 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:34 ; elapsed = 00:00:12 . Memory (MB): peak = 6698.602 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6698.602 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 6698.602 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.327 . Memory (MB): peak = 6698.602 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 6698.602 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:37 ; elapsed = 00:00:15 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.runs/impl_1/mlp_cloud_detection_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:44 ; elapsed = 00:00:23 . Memory (MB): peak = 6698.602 ; gain = 0.000
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s02_nodes/s02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[2].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[2].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block mlp_cloud_detection_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the mlp_cloud_detection_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <mlp_cloud_detection_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <mlp_cloud_detection_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <mlp_cloud_detection_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <mlp_cloud_detection_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force mlp_cloud_detection_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Generating merged BMM file for the design top 'mlp_cloud_detection_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/OCDS/cloude-detection-accelerator/mlp_ip_generater/mlp_ip_generater.gen/sources_1/bd/mlp_cloud_detection/ip/mlp_cloud_detection_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./mlp_cloud_detection_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+232 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:07 ; elapsed = 00:01:21 . Memory (MB): peak = 7123.473 ; gain = 424.871
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 11 16:04:07 2026...

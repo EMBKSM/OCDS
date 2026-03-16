@@ -1,0 +1,60 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  16103, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  62637, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  34672, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  30978, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  28269, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 165531 *, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  31285, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,  31285, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  31285, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  31371, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  31367, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  31350, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  31348, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  31316, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  31288, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  30511, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="cloud_mlp_top" col1="cloud_mlp.cpp:211" col2="16103" col3="28269" col4="31371" col5="31316" col6="30511">
+                    <row id="6" col0="read_input" col1="cloud_mlp.cpp:30" col2="2144" col3="77" col4="111" col5="79" col6="63"/>
+                    <row id="1" col0="compute_l1" col1="cloud_mlp.cpp:54" col2="2810" col3="536" col4="711" col5="707" col6="">
+                        <row id="5" col0="relu" col1="cloud_mlp.cpp:17" col2="296" col2_disp="  296 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="2" col0="compute_l2" col1="cloud_mlp.cpp:93" col2="5590" col3="13710" col4="14693" col5="14627" col6="">
+                        <row id="5" col0="relu" col1="cloud_mlp.cpp:17" col2="592" col2_disp="  592 (4 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="3" col0="compute_l3" col1="cloud_mlp.cpp:143" col2="2810" col3="13804" col4="14599" col5="14471" col6="">
+                        <row id="5" col0="relu" col1="cloud_mlp.cpp:17" col2="296" col2_disp="  296 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="7" col0="write_output" col1="cloud_mlp.cpp:178" col2="2698" col3="100" col4="198" col5="109" col6="">
+                        <row id="4" col0="hard_sigmoid" col1="cloud_mlp.cpp:22" col2="1467" col3="" col4="" col5="" col6=""/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

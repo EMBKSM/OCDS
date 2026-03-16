@@ -1,0 +1,113 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "1 4 2 5 3",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 211,
+    "instructions": 56,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "cloud_mlp_top",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 62637
+  },
+  "1": {
+    "basicblocks": 72,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 30,
+    "instructions": 186,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 0,
+    "name": "read_input",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 190
+  },
+  "2": {
+    "basicblocks": 5666,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 68,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 93,
+    "instructions": 13836,
+    "loads": {
+      "G": 260,
+      "L": 324
+    },
+    "memory_accesses": 1360,
+    "name": "compute_l2",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 30476
+  },
+  "3": {
+    "basicblocks": 151,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 9,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 178,
+    "instructions": 355,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 12,
+    "name": "write_output",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 359
+  },
+  "4": {
+    "basicblocks": 196,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 8,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 54,
+    "instructions": 506,
+    "loads": {
+      "G": 10,
+      "L": 14
+    },
+    "memory_accesses": 52,
+    "name": "compute_l1",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1146
+  },
+  "5": {
+    "basicblocks": 5652,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 132,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 143,
+    "instructions": 13898,
+    "loads": {
+      "G": 258,
+      "L": 386
+    },
+    "memory_accesses": 1416,
+    "name": "compute_l3",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 30410
+  }
+}

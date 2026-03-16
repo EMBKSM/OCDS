@@ -1,0 +1,786 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./cloud_mlp.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file './cloud_mlp.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./cloud_mlp.hpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file './cloud_mlp.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./weights.h' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file './weights.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./tb_cloud_mlp.cpp' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file './tb_cloud_mlp.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cloud_mlp_top' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xczu9eg-ffvb1156-2-e' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1465] Applying config ini 'clock=30ns' from hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=0.81ns' from hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.81ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.unsafe_math_optimizations=1' from hls_config.cfg(15)
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [HLS 200-1465] Applying config ini 'syn.schedule.enable_dsp_full_reg=1' from hls_config.cfg(17)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.958 seconds; current allocated memory: 150.707 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'cloud_mlp.cpp' ... 
+WARNING: [HLS 207-6125] address of array 'B_OUT' will always evaluate to 'true' (cloud_mlp.cpp:180:30)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.316 seconds; current allocated memory: 154.008 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 11,057 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 31,578 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,783 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,918 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 14,545 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50,189 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,759 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,759 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,759 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,845 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,841 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,824 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,788 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,788 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,760 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,983 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'compute_l1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (cloud_mlp.cpp:85:21)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'compute_l2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (cloud_mlp.cpp:136:25)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'compute_l3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (cloud_mlp.cpp:167:21)
+INFO: [HLS 214-131] Inlining function 'hard_sigmoid(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (cloud_mlp.cpp:195:29)
+INFO: [HLS 214-291] Loop 'L3_Inner_Unroll' is marked as complete unroll implied by the pipeline pragma (cloud_mlp.cpp:161:26)
+INFO: [HLS 214-291] Loop 'L2_Inner_Unroll' is marked as complete unroll implied by the pipeline pragma (cloud_mlp.cpp:118:26)
+INFO: [HLS 214-291] Loop 'L1_Inner' is marked as complete unroll implied by the pipeline pragma (cloud_mlp.cpp:77:19)
+INFO: [HLS 214-188] Unrolling loop 'Loop_Out' (cloud_mlp.cpp:185:15) in function 'write_output' partially with a factor of 4 (cloud_mlp.cpp:171:0)
+INFO: [HLS 214-186] Unrolling loop 'L3_Inner_Unroll' (cloud_mlp.cpp:161:26) in function 'compute_l3' completely with a factor of 128 (cloud_mlp.cpp:144:0)
+INFO: [HLS 214-186] Unrolling loop 'L2_Inner_Unroll' (cloud_mlp.cpp:118:26) in function 'compute_l2' completely with a factor of 64 (cloud_mlp.cpp:92:0)
+INFO: [HLS 214-186] Unrolling loop 'L1_Inner' (cloud_mlp.cpp:77:19) in function 'compute_l1' completely with a factor of 4 (cloud_mlp.cpp:56:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'read_input(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&)' (cloud_mlp.cpp:31:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'write_output(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<PacketMeta, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (cloud_mlp.cpp:171:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W3': Complete partitioning on dimension 2. (./weights.h:205:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2': Cyclic partitioning with factor 2 on dimension 1. Complete partitioning on dimension 2. (./weights.h:73:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W1': Complete partitioning on dimension 2. (./weights.h:5:0)
+INFO: [HLS 214-248] Applying array_partition to 'input_arr': Complete partitioning on dimension 1. (cloud_mlp.cpp:217:12)
+INFO: [HLS 214-248] Applying array_partition to 'l1_out': Complete partitioning on dimension 1. (cloud_mlp.cpp:220:12)
+INFO: [HLS 214-248] Applying array_partition to 'l2_out': Complete partitioning on dimension 1. (cloud_mlp.cpp:224:12)
+INFO: [HLS 214-248] Applying array_partition to 'l3_out': Complete partitioning on dimension 1. (cloud_mlp.cpp:227:12)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 18.172 seconds; current allocated memory: 156.426 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 156.426 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.16 seconds; current allocated memory: 180.031 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.109 seconds; current allocated memory: 193.930 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'cloud_mlp_top' (cloud_mlp.cpp:207:1), detected/extracted 5 process function(s): 
+	 'read_input'
+	 'compute_l1'
+	 'compute_l2'
+	 'compute_l3'
+	 'write_output'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cloud_mlp.cpp:155:32) to (cloud_mlp.cpp:167:19) in function 'compute_l3'... converting 775 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cloud_mlp.cpp:109:32) to (cloud_mlp.cpp:135:21) in function 'compute_l2'... converting 781 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cloud_mlp.cpp:68:32) to (cloud_mlp.cpp:85:19) in function 'compute_l1'... converting 31 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'write_output' (cloud_mlp.cpp:25:16)...4 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'compute_l3' (cloud_mlp.cpp:152:14)...255 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'compute_l2' (cloud_mlp.cpp:104:14)...254 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'compute_l1' (cloud_mlp.cpp:20:14)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 9.005 seconds; current allocated memory: 259.742 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 11 seconds. CPU system time: 0 seconds. Elapsed time: 10.571 seconds; current allocated memory: 410.719 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cloud_mlp_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_input' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.499 seconds; current allocated memory: 417.375 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 418.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_l1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L1_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'L1_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.323 seconds; current allocated memory: 424.363 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 424.488 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_l2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L2_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'L2_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 4.778 seconds; current allocated memory: 483.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.763 seconds; current allocated memory: 483.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_l3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L3_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'L3_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 5.933 seconds; current allocated memory: 525.512 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.891 seconds; current allocated memory: 525.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output_Pipeline_Loop_Out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_Out'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop_Out'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.935 seconds; current allocated memory: 525.512 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 525.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln25) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 525.512 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 525.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cloud_mlp_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 525.512 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 525.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_input' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_input'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.252 seconds; current allocated memory: 525.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_l1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'compute_l1' pipeline 'L1_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_8s_24_4_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_l1'.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_B1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_0_RAM_1P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_1_RAM_1P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_2_RAM_1P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l1_p_ZL2W1_3_RAM_1P_BRAM_1R1W' using block ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.207 seconds; current allocated memory: 542.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_l2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'compute_l2' pipeline 'L2_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'compute_l2' is 8448 from HDL expression: ((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 130 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15ns_31_4_1': 128 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 130 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_l2'.
+INFO: [HLS 200-2168] Implementing memory 'cloud_mlp_top_compute_l2_B2_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_0_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_0_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_1_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_1_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_2_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_2_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_3_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_3_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_4_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_4_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_5_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_5_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_6_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_6_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_7_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_7_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_8_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_8_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_9_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_9_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_10_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_10_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_11_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_11_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_12_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_12_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_13_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_13_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_14_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_14_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_15_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_15_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_16_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_16_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_17_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_17_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_18_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_18_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_19_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_19_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_20_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_20_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_21_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_21_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_22_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_22_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_23_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_23_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_24_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_24_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_25_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_25_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_26_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_26_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_27_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_27_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_28_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_28_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_29_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_29_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_30_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_30_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_31_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_31_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_32_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_32_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_33_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_33_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_34_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_34_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_35_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_35_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_36_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_36_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_37_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_37_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_38_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_38_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_39_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_39_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_40_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_40_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_41_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_41_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_42_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_42_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_43_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_43_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_44_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_44_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_45_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_45_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_46_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_46_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_47_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_47_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_48_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_48_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_49_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_49_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_50_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_50_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_51_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_51_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_52_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_52_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_53_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_53_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_54_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_54_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_55_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_55_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_56_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_56_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_57_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_57_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_58_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_58_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_59_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_59_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_60_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_60_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_61_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_61_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_62_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_62_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_0_63_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l2_p_ZL2W2_1_63_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 10.092 seconds; current allocated memory: 673.355 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_l3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'compute_l3' pipeline 'L3_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'compute_l3' is 8499 from HDL expression: ((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 129 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15ns_31_4_1': 128 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 129 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_l3'.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_B3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_0_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_1_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_2_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_3_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_4_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_5_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_6_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_7_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_8_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_9_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_10_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_11_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_12_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_13_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_14_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_15_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_16_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_17_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_18_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_19_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_20_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_21_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_22_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_23_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_24_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_25_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_26_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_27_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_28_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_29_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_30_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_31_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_32_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_33_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_34_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_35_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_36_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_37_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_38_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_39_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_40_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_41_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_42_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_43_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_44_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_45_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_46_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_47_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_48_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_49_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_50_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_51_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_52_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_53_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_54_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_55_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_56_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_57_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_58_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_59_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_60_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_61_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_62_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_63_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_64_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_65_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_66_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_67_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_68_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_69_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_70_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_71_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_72_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_73_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_74_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_75_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_76_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_77_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_78_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_79_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_80_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_81_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_82_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_83_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_84_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_85_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_86_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_87_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_88_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_89_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_90_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_91_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_92_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_93_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_94_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_95_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_96_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_97_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_98_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_99_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_100_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_101_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_102_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_103_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_104_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_105_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_106_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_107_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_108_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_109_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_110_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_111_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_112_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_113_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_114_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_115_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_116_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_117_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_118_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_119_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_120_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_121_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_122_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_123_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_124_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_125_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_126_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cloud_mlp_top_compute_l3_p_ZL2W3_127_RAM_2P_BRAM_1R1W' using block ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 8 seconds. CPU system time: 3 seconds. Elapsed time: 16.022 seconds; current allocated memory: 824.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output_Pipeline_Loop_Out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_6_15_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output_Pipeline_Loop_Out'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 3 seconds. Elapsed time: 8.375 seconds; current allocated memory: 960.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_8ns_20ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 972.609 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cloud_mlp_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cloud_mlp_top/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'cloud_mlp_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cloud_mlp_top'.
+INFO: [RTMG 210-285] Implementing FIFO 'meta_stream_U(cloud_mlp_top_fifo_w32_d64_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_1_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_2_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_arr_3_U(cloud_mlp_top_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_1_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_2_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_3_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_4_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_5_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_6_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_7_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_8_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_9_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_10_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_11_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_12_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_13_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_14_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_15_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_16_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_17_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_18_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_19_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_20_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_21_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_22_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_23_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_24_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_25_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_26_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_27_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_28_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_29_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_30_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_31_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_32_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_33_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_34_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_35_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_36_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_37_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_38_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_39_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_40_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_41_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_42_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_43_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_44_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_45_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_46_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_47_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_48_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_49_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_50_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_51_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_52_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_53_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_54_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_55_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_56_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_57_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_58_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_59_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_60_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_61_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_62_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l1_out_63_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_1_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_2_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_3_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_4_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_5_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_6_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_7_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_8_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_9_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_10_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_11_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_12_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_13_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_14_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_15_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_16_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_17_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_18_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_19_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_20_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_21_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_22_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_23_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_24_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_25_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_26_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_27_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_28_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_29_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_30_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_31_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_32_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_33_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_34_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_35_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_36_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_37_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_38_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_39_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_40_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_41_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_42_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_43_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_44_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_45_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_46_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_47_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_48_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_49_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_50_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_51_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_52_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_53_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_54_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_55_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_56_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_57_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_58_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_59_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_60_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_61_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_62_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_63_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_64_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_65_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_66_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_67_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_68_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_69_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_70_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_71_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_72_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_73_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_74_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_75_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_76_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_77_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_78_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_79_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_80_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_81_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_82_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_83_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_84_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_85_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_86_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_87_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_88_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_89_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_90_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_91_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_92_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_93_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_94_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_95_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_96_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_97_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_98_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_99_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_100_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_101_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_102_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_103_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_104_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_105_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_106_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_107_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_108_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_109_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_110_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_111_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_112_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_113_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_114_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_115_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_116_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_117_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_118_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_119_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_120_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_121_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_122_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_123_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_124_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_125_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_126_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l2_out_127_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_1_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_2_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_3_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_4_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_5_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_6_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_7_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_8_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_9_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_10_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_11_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_12_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_13_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_14_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_15_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_16_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_17_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_18_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_19_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_20_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_21_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_22_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_23_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_24_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_25_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_26_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_27_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_28_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_29_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_30_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_31_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_32_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_33_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_34_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_35_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_36_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_37_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_38_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_39_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_40_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_41_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_42_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_43_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_44_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_45_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_46_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_47_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_48_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_49_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_50_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_51_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_52_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_53_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_54_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_55_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_56_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_57_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_58_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_59_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_60_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_61_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_62_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'l3_out_63_U(cloud_mlp_top_fifo_w15_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 13.293 seconds; current allocated memory: 977.629 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 3 seconds. Elapsed time: 10.855 seconds; current allocated memory: 990.109 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/OCDS/OCDS_4K_Streams/OCDS_4K_Stream/OCDS_4K_Stream/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 7.836 seconds; current allocated memory: 1.037 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cloud_mlp_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for cloud_mlp_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 46.47 MHz
+INFO: [HLS 200-112] Total CPU user time: 66 seconds. Total CPU system time: 13 seconds. Total elapsed time: 142.986 seconds; peak allocated memory: 1.037 GB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 27s

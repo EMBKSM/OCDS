@@ -1,0 +1,107 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2 4 3 5",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 211,
+    "instructions": 1051,
+    "memory_accesses": 0,
+    "name": "cloud_mlp_top",
+    "total_instructions": 165531
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 30,
+    "instructions": 74,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "read_input",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 74
+  },
+  "2": {
+    "basicblocks": 129,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 22,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 54,
+    "instructions": 855,
+    "loads": {
+      "G": 10,
+      "L": 4
+    },
+    "memory_accesses": 92,
+    "name": "compute_l1",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 855
+  },
+  "3": {
+    "basicblocks": 1617,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 146,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 143,
+    "instructions": 81579,
+    "loads": {
+      "G": 258,
+      "L": 128
+    },
+    "memory_accesses": 836,
+    "name": "compute_l3",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 81579
+  },
+  "4": {
+    "basicblocks": 1695,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 82,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 93,
+    "instructions": 81809,
+    "loads": {
+      "G": 260,
+      "L": 64
+    },
+    "memory_accesses": 904,
+    "name": "compute_l2",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 81809
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 12,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 178,
+    "instructions": 163,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 72,
+    "name": "write_output",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 163
+  }
+}

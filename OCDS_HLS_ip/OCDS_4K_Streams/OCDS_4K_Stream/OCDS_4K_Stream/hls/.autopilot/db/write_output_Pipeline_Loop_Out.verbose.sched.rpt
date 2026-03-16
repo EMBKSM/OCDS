@@ -1,0 +1,213 @@
+
+
+================================================================
+== Vitis HLS Report for 'write_output_Pipeline_Loop_Out'
+================================================================
+* Date:           Wed Feb 11 10:34:35 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        OCDS_4K_Stream
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  25.00 ns|  2.872 ns|     0.68 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       17|       17|  0.425 us|  0.425 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop_Out  |       15|       15|         1|          1|          1|    16|       yes|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.87>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 4 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%out_sum = alloca i32 1" [cloud_mlp.cpp:186->cloud_mlp.cpp:237]   --->   Operation 5 'alloca' 'out_sum' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_read_1 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read63"   --->   Operation 6 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_read_2 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read59"   --->   Operation 7 'read' 'p_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_read_3 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read55"   --->   Operation 8 'read' 'p_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_read_4 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read51"   --->   Operation 9 'read' 'p_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_read_5 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read47"   --->   Operation 10 'read' 'p_read_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_read_6 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read43"   --->   Operation 11 'read' 'p_read_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_read_7 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read39"   --->   Operation 12 'read' 'p_read_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_read_8 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read35"   --->   Operation 13 'read' 'p_read_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_read_9 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read31"   --->   Operation 14 'read' 'p_read_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_read_10 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read27"   --->   Operation 15 'read' 'p_read_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_read_11 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read23"   --->   Operation 16 'read' 'p_read_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_read_12 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read19"   --->   Operation 17 'read' 'p_read_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_read_13 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read15"   --->   Operation 18 'read' 'p_read_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_read_14 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read11"   --->   Operation 19 'read' 'p_read_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_read_15 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read7"   --->   Operation 20 'read' 'p_read_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_read_16 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read3"   --->   Operation 21 'read' 'p_read_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_read_17 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read62"   --->   Operation 22 'read' 'p_read_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_read_18 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read58"   --->   Operation 23 'read' 'p_read_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_read_19 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read54"   --->   Operation 24 'read' 'p_read_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%p_read_20 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read50"   --->   Operation 25 'read' 'p_read_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_read_21 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read46"   --->   Operation 26 'read' 'p_read_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%p_read_22 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read42"   --->   Operation 27 'read' 'p_read_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%p_read_23 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read38"   --->   Operation 28 'read' 'p_read_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_read_24 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read34"   --->   Operation 29 'read' 'p_read_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%p_read_25 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read30"   --->   Operation 30 'read' 'p_read_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%p_read_26 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read26"   --->   Operation 31 'read' 'p_read_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%p_read_27 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read22"   --->   Operation 32 'read' 'p_read_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%p_read_28 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read18"   --->   Operation 33 'read' 'p_read_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%p_read_29 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read14"   --->   Operation 34 'read' 'p_read_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%p_read_30 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read10"   --->   Operation 35 'read' 'p_read_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%p_read_31 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read6"   --->   Operation 36 'read' 'p_read_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%p_read_32 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read2"   --->   Operation 37 'read' 'p_read_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%p_read_33 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read61"   --->   Operation 38 'read' 'p_read_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%p_read_34 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read57"   --->   Operation 39 'read' 'p_read_34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%p_read_35 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read53"   --->   Operation 40 'read' 'p_read_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%p_read_36 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read49"   --->   Operation 41 'read' 'p_read_36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%p_read_37 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read45"   --->   Operation 42 'read' 'p_read_37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%p_read_38 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read41"   --->   Operation 43 'read' 'p_read_38' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%p_read_39 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read37"   --->   Operation 44 'read' 'p_read_39' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%p_read_40 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read33"   --->   Operation 45 'read' 'p_read_40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%p_read_41 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read29"   --->   Operation 46 'read' 'p_read_41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%p_read_42 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read25"   --->   Operation 47 'read' 'p_read_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%p_read_43 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read21"   --->   Operation 48 'read' 'p_read_43' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%p_read_44 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read17"   --->   Operation 49 'read' 'p_read_44' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%p_read_45 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read13"   --->   Operation 50 'read' 'p_read_45' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%p_read_46 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read9"   --->   Operation 51 'read' 'p_read_46' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%p_read_47 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read5"   --->   Operation 52 'read' 'p_read_47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%p_read_48 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read1"   --->   Operation 53 'read' 'p_read_48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%p_read_49 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read60"   --->   Operation 54 'read' 'p_read_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%p_read_50 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read56"   --->   Operation 55 'read' 'p_read_50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%p_read_51 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read52"   --->   Operation 56 'read' 'p_read_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%p_read_52 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read48"   --->   Operation 57 'read' 'p_read_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%p_read_53 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read44"   --->   Operation 58 'read' 'p_read_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%p_read_54 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read40"   --->   Operation 59 'read' 'p_read_54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%p_read_55 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read36"   --->   Operation 60 'read' 'p_read_55' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%p_read_56 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read32"   --->   Operation 61 'read' 'p_read_56' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%p_read_57 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read28"   --->   Operation 62 'read' 'p_read_57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%p_read_58 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read24"   --->   Operation 63 'read' 'p_read_58' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%p_read_59 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read20"   --->   Operation 64 'read' 'p_read_59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%p_read_60 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read16"   --->   Operation 65 'read' 'p_read_60' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%p_read_61 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read12"   --->   Operation 66 'read' 'p_read_61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%p_read_62 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read8"   --->   Operation 67 'read' 'p_read_62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%p_read_63 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read4"   --->   Operation 68 'read' 'p_read_63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%p_read64 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read"   --->   Operation 69 'read' 'p_read64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.42ns)   --->   "%store_ln186 = store i16 1024, i16 %out_sum" [cloud_mlp.cpp:186->cloud_mlp.cpp:237]   --->   Operation 70 'store' 'store_ln186' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 71 [1/1] (0.42ns)   --->   "%store_ln190 = store i7 0, i7 %j" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 71 'store' 'store_ln190' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.split.i.i"   --->   Operation 72 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%j_1 = load i7 %j" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 73 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%out_sum_2 = load i16 %out_sum" [cloud_mlp.cpp:196->cloud_mlp.cpp:237]   --->   Operation 74 'load' 'out_sum_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%trunc_ln190 = trunc i7 %j_1" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 75 'trunc' 'trunc_ln190' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%specpipeline_ln191 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_517" [cloud_mlp.cpp:191->cloud_mlp.cpp:237]   --->   Operation 76 'specpipeline' 'specpipeline_ln191' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%speclooptripcount_ln186 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [cloud_mlp.cpp:186->cloud_mlp.cpp:237]   --->   Operation 77 'speclooptripcount' 'speclooptripcount_ln186' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%specloopname_ln190 = specloopname void @_ssdm_op_SpecLoopName, void @empty_527" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 78 'specloopname' 'specloopname_ln190' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.48ns)   --->   "%prod = sparsemux i15 @_ssdm_op_SparseMux.ap_auto.16i15.i15.i6, i6 0, i15 %p_read64, i6 4, i15 %p_read_63, i6 8, i15 %p_read_62, i6 12, i15 %p_read_61, i6 16, i15 %p_read_60, i6 20, i15 %p_read_59, i6 24, i15 %p_read_58, i6 28, i15 %p_read_57, i6 32, i15 %p_read_56, i6 36, i15 %p_read_55, i6 40, i15 %p_read_54, i6 44, i15 %p_read_53, i6 48, i15 %p_read_52, i6 52, i15 %p_read_51, i6 56, i15 %p_read_50, i6 60, i15 %p_read_49, i15 0, i6 %trunc_ln190" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 79 'sparsemux' 'prod' <Predicate = true> <Delay = 0.48> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.48> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%zext_ln194 = zext i15 %prod" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 80 'zext' 'zext_ln194' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.48ns)   --->   "%prod_1 = sparsemux i15 @_ssdm_op_SparseMux.ap_auto.16i15.i15.i6, i6 0, i15 %p_read_48, i6 4, i15 %p_read_47, i6 8, i15 %p_read_46, i6 12, i15 %p_read_45, i6 16, i15 %p_read_44, i6 20, i15 %p_read_43, i6 24, i15 %p_read_42, i6 28, i15 %p_read_41, i6 32, i15 %p_read_40, i6 36, i15 %p_read_39, i6 40, i15 %p_read_38, i6 44, i15 %p_read_37, i6 48, i15 %p_read_36, i6 52, i15 %p_read_35, i6 56, i15 %p_read_34, i6 60, i15 %p_read_33, i15 0, i6 %trunc_ln190" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 81 'sparsemux' 'prod_1' <Predicate = true> <Delay = 0.48> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.48> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln194_1 = zext i15 %prod_1" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 82 'zext' 'zext_ln194_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.48ns)   --->   "%prod_2 = sparsemux i15 @_ssdm_op_SparseMux.ap_auto.16i15.i15.i6, i6 0, i15 %p_read_32, i6 4, i15 %p_read_31, i6 8, i15 %p_read_30, i6 12, i15 %p_read_29, i6 16, i15 %p_read_28, i6 20, i15 %p_read_27, i6 24, i15 %p_read_26, i6 28, i15 %p_read_25, i6 32, i15 %p_read_24, i6 36, i15 %p_read_23, i6 40, i15 %p_read_22, i6 44, i15 %p_read_21, i6 48, i15 %p_read_20, i6 52, i15 %p_read_19, i6 56, i15 %p_read_18, i6 60, i15 %p_read_17, i15 0, i6 %trunc_ln190" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 83 'sparsemux' 'prod_2' <Predicate = true> <Delay = 0.48> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.48> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln194_2 = zext i15 %prod_2" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 84 'zext' 'zext_ln194_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.48ns)   --->   "%prod_3 = sparsemux i15 @_ssdm_op_SparseMux.ap_auto.16i15.i15.i6, i6 0, i15 %p_read_16, i6 4, i15 %p_read_15, i6 8, i15 %p_read_14, i6 12, i15 %p_read_13, i6 16, i15 %p_read_12, i6 20, i15 %p_read_11, i6 24, i15 %p_read_10, i6 28, i15 %p_read_9, i6 32, i15 %p_read_8, i6 36, i15 %p_read_7, i6 40, i15 %p_read_6, i6 44, i15 %p_read_5, i6 48, i15 %p_read_4, i6 52, i15 %p_read_3, i6 56, i15 %p_read_2, i6 60, i15 %p_read_1, i15 0, i6 %trunc_ln190" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 85 'sparsemux' 'prod_3' <Predicate = true> <Delay = 0.48> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.48> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%zext_ln194_3 = zext i15 %prod_3" [cloud_mlp.cpp:194->cloud_mlp.cpp:237]   --->   Operation 86 'zext' 'zext_ln194_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.84ns)   --->   "%add_ln196 = add i16 %zext_ln194, i16 %zext_ln194_1" [cloud_mlp.cpp:196->cloud_mlp.cpp:237]   --->   Operation 87 'add' 'add_ln196' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 88 [1/1] (0.84ns)   --->   "%add_ln196_1 = add i16 %zext_ln194_3, i16 %zext_ln194_2" [cloud_mlp.cpp:196->cloud_mlp.cpp:237]   --->   Operation 88 'add' 'add_ln196_1' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln196_2 = add i16 %add_ln196_1, i16 %add_ln196" [cloud_mlp.cpp:196->cloud_mlp.cpp:237]   --->   Operation 89 'add' 'add_ln196_2' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.34> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 90 [1/1] (0.68ns) (root node of TernaryAdder)   --->   "%out_sum_3 = add i16 %add_ln196_2, i16 %out_sum_2" [cloud_mlp.cpp:196->cloud_mlp.cpp:237]   --->   Operation 90 'add' 'out_sum_3' <Predicate = true> <Delay = 0.68> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.34> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 91 [1/1] (0.77ns)   --->   "%j_3 = add i7 %j_1, i7 4" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 91 'add' 'j_3' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i7.i32, i7 %j_3, i32 6" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 92 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.42ns)   --->   "%store_ln186 = store i16 %out_sum_3, i16 %out_sum" [cloud_mlp.cpp:186->cloud_mlp.cpp:237]   --->   Operation 93 'store' 'store_ln186' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 94 [1/1] (0.42ns)   --->   "%store_ln190 = store i7 %j_3, i7 %j" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 94 'store' 'store_ln190' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%br_ln190 = br i1 %tmp, void %for.body.split.i.i, void %write_output.exit.exitStub" [cloud_mlp.cpp:190->cloud_mlp.cpp:237]   --->   Operation 95 'br' 'br_ln190' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%write_ln196 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %out_sum_1_out, i16 %out_sum_3" [cloud_mlp.cpp:196->cloud_mlp.cpp:237]   --->   Operation 96 'write' 'write_ln196' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 97 'ret' 'ret_ln0' <Predicate = (tmp)> <Delay = 0.42>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 25.000ns, clock uncertainty: 0.675ns.
+
+ <State 1>: 2.872ns
+The critical path consists of the following:
+	'store' operation ('store_ln190', cloud_mlp.cpp:190->cloud_mlp.cpp:237) of constant 0 7 bit on local variable 'j', cloud_mlp.cpp:190->cloud_mlp.cpp:237 [133]  (0.427 ns)
+	'load' operation 7 bit ('j', cloud_mlp.cpp:190->cloud_mlp.cpp:237) on local variable 'j', cloud_mlp.cpp:190->cloud_mlp.cpp:237 [136]  (0.000 ns)
+	'sparsemux' operation 15 bit ('prod', cloud_mlp.cpp:194->cloud_mlp.cpp:237) [142]  (0.489 ns)
+	'add' operation 16 bit ('add_ln196', cloud_mlp.cpp:196->cloud_mlp.cpp:237) [150]  (0.842 ns)
+	'add' operation 16 bit ('add_ln196_2', cloud_mlp.cpp:196->cloud_mlp.cpp:237) [152]  (0.000 ns)
+	'add' operation 16 bit ('out_sum_3', cloud_mlp.cpp:196->cloud_mlp.cpp:237) [153]  (0.687 ns)
+	'store' operation ('store_ln186', cloud_mlp.cpp:186->cloud_mlp.cpp:237) of variable 'out_sum_3', cloud_mlp.cpp:196->cloud_mlp.cpp:237 16 bit on local variable 'out_sum', cloud_mlp.cpp:186->cloud_mlp.cpp:237 [156]  (0.427 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

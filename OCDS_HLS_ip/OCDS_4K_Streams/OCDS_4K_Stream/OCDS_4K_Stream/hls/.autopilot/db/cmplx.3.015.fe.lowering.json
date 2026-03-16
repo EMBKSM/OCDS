@@ -1,0 +1,104 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 4 3 2 5",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 211,
+    "instructions": 1326,
+    "loads": {
+      "L": 260
+    },
+    "memory_accesses": 0,
+    "name": "cloud_mlp_top",
+    "total_instructions": 31288
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 30,
+    "instructions": 64,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "read_input",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 64
+  },
+  "2": {
+    "basicblocks": 1584,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 142,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 143,
+    "instructions": 14471,
+    "loads": {
+      "G": 258
+    },
+    "memory_accesses": 835,
+    "name": "compute_l3",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 14471
+  },
+  "3": {
+    "basicblocks": 1596,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 78,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 93,
+    "instructions": 14627,
+    "loads": {
+      "G": 260
+    },
+    "memory_accesses": 901,
+    "name": "compute_l2",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 14627
+  },
+  "4": {
+    "basicblocks": 96,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 18,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 54,
+    "instructions": 707,
+    "loads": {
+      "G": 10
+    },
+    "memory_accesses": 91,
+    "name": "compute_l1",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 707
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 14,
+    "file": "cloud_mlp.cpp",
+    "fileloc": 178,
+    "instructions": 93,
+    "memory_accesses": 8,
+    "name": "write_output",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 93
+  }
+}

@@ -1,0 +1,16 @@
+15:14:24 INFO  : updated workspace path: C:\OCDS
+15:14:26 INFO  : Marking the target connection as default Local
+15:14:26 INFO  : Marking the target connection as default Linux Agent
+15:14:26 INFO  : Marking the target connection as default XRTServer
+15:14:26 INFO  : Marking the target connection as default LinuxEmulation
+15:14:26 INFO  : Marking the target connection as default QEMU
+15:14:26 INFO  : created .gitignore file for the project C:\OCDS
+15:14:30 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw
+15:14:30 INFO  : created .gitignore file for the project C:\OCDS\OCDS_4K_Stream
+15:14:33 INFO  : [INFO]: Initializing repositories
+15:14:33 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+15:14:33 INFO  : Successfully created repository data at C:\OCDS/_ide\.wsdata
+15:14:33 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\vip\AppData\Local\Temp\rigel_lopper_vip13306106197320040295 -r C:\OCDS\_ide\.wsdata\.repo.yaml
+15:14:33 INFO  : Embedded Template List generated successfully
+16:23:00 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\vip\AppData\Local\Temp\rigel_lopper_vip9321774826538119057 -r C:\OCDS\_ide\.wsdata\.repo.yaml
+16:23:00 INFO  : Embedded Template List generated successfully

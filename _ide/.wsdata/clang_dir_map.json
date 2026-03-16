@@ -1,0 +1,9 @@
+{
+  "workspaceRoot": "C:\\OCDS\\cloude-detection-accelerator",
+  "mapping": {
+    "tb_cloud_mlp.cpp": "OCDS_HLS_ip\\OCDS_4K_Streams\\OCDS_4K_Stream",
+    "weights.h": "OCDS_HLS_ip\\OCDS_4K_Streams\\OCDS_4K_Stream",
+    "cloud_mlp.hpp": "OCDS_HLS_ip\\OCDS_4K_Streams\\OCDS_4K_Stream",
+    "cloud_mlp.cpp": "OCDS_HLS_ip\\OCDS_4K_Streams\\OCDS_4K_Stream"
+  }
+}
