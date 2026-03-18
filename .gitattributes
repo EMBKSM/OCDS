@@ -1,0 +1,6 @@
+*.ada linguist-generated=true
+*.adb linguist-generated=true
+*.ads linguist-generated=true
+*.vhd linguist-generated=true
+*.vhdl linguist-generated=true
+*.html linguist-generated=true
